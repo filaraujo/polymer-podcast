@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>poly foo</title>
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild-->
+
+  <!-- build:js bower_components/webcomponentsjs/webcomponents.min.js -->
+  <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+  <!-- endbuild -->
+
+  <!-- will be replaced with elements/elements.vulcanized.html -->
+  <link rel="import" href="elements/elements.html">
+  <link rel="import" href="../bower_components/akyral-layout/akyral-layout.html">
+  <!-- endreplace-->
+</head>
+
+<body>
+  <akyral-layout open type="parallax">
+    <div drawer>
+      <ul>
+        <li>
+          <span>Episode 3</span>
+          <p>Laboris consequat est nulla aliquip consectetur ipsum aliqua elit anim sit incididunt sunt.</p>
+        </li>
+
+        <li>
+          <span>Episode 2</span>
+          <p>Laboris consequat est nulla aliquip consectetur ipsum aliqua elit anim sit incididunt sunt.</p>
+        </li>
+
+        <li>
+          <span>Episode 1</span>
+          <p>Laboris consequat est nulla aliquip consectetur ipsum aliqua elit anim sit incididunt sunt.</p>
+        </li>
+      </ul>
+      <a href="#">
+
+      </a>
+    </div>
+    <div main>
+      main
+    </div>
+  </akyral-layout>
+
+
+
+  <div class="player" onclick="this.classList.toggle('player-active')">
+    <div class="player-poster"></div>
+    <span>Episode 1: History of Polymer</span>
+    <span class="player-time">12:57</span>
+    <span class="player-bar"></span>
+  </div>
+
+
+  <!-- build:js scripts/app.js -->
+  <script src="scripts/app.js"></script>
+  <!-- endbuild-->
+</body>
+
+</html>

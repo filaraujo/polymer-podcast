@@ -1,0 +1,8 @@
+{
+  "name": "personal",
+  "version": "0.0.0",
+  "dependencies": {
+    "polymer": "Polymer/polymer#^0.8.0-rc.6",
+    "akyral-layout": "polymer-0.8"
+  }
+}
