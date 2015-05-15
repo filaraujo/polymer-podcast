@@ -1,5 +1,8 @@
 body {
   background: #fefefe;
+  color: #888;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
   min-height: 100vh;
   padding: 0;
   margin: 0;
@@ -9,6 +12,14 @@ body {
   border: 2px solid #333;
   height: 100%;
   padding: 20px;
+}
+
+.drawer.akyral-layout {
+  background: none;
+}
+
+.content.akyral-layout {
+  background: #f4f4f4;
 }
 
 [main] {
@@ -97,5 +108,185 @@ li {
       background: green;
       height: 5px;
     }
+  }
+}
+
+
+$page-max-width: 800px;
+
+header {
+  box-sizing: border-box;
+  overflow: auto;
+  height: 420px;
+  padding: 150px 0 0;
+  position: relative;
+
+  h1 {
+    color: #333;
+    font-size: 40px;
+    font-weight: 300;
+    margin: 25px 0;
+    text-align: center;
+  }
+}
+
+$nav-height: 70px;
+
+nav {
+  background: rgba(0, 1, 1, .75);
+  bottom: 0;
+  font-size: 0;
+  height: $nav-height;
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+
+  a {
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid transparent;
+    box-sizing: border-box;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    line-height: $nav-height;
+    height: $nav-height;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background .3s;
+    padding: 0 20px;
+
+    &:hover {
+      background: #222;
+    }
+
+    &[active] {
+      background: #fff;
+      border-bottom: 3px solid #be3f6f;
+      border-top: 3px solid #be3f6f;
+      color: #333;
+      font-weight: 500;
+
+      iron-icon[icon] {
+        color: #be3f6f;
+      }
+    }
+
+    iron-icon[icon] {
+      height: 26px;
+      margin-right: 4px;
+      width: 26px;
+    }
+  }
+}
+
+
+section {
+  padding: 40px;
+
+  h2 {
+    font-weight: 300;
+  }
+}
+
+.latest,
+.past > div {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.past {
+  background: #fefefe;
+}
+
+
+
+.episode-info {
+  border-bottom: 1px solid #ddd;
+  overflow: auto;
+  padding-left: 120px;
+  position: relative;
+
+  span {
+    color: #be3f6f;
+    font-size: 80px;
+    font-weight: 300;
+    position: absolute;
+    top: 0;
+    left: 10px;
+  }
+
+  h3 {
+    color: #2C343B;
+    font-size: 22px;
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: 15px;
+    margin: 10px 0 24px;
+  }
+}
+
+.episode-meta,
+.episode-panel {
+  padding: 14px 0;
+  margin: 0;
+  display: flex;
+  margin-left: 120px;
+
+  dt {
+    color: #be3f6f;
+    flex: 0 0 80px;
+    font-weight: 500;
+    margin-right: 10px;
+  }
+
+  dd {
+    margin: 0;
+  }
+}
+
+.episode-meta {
+  border-bottom: 1px solid #ddd;
+
+  dd {
+    color: #333;
+    flex: 2;
+  }
+
+}
+
+
+.episode-panel {
+  color: #333;
+
+  dd {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  dt {
+    padding-top: 10px;
+    text-align: center;
+
+    iron-icon {
+      height: 30px;
+      width: 30px;
+    }
+
+    span {
+      display: block;
+    }
+  }
+
+  div {
+    flex: 1 0 50%;
+    margin-bottom: 6px;
+  }
+
+  img {
+    margin-right: 6px;
+    vertical-align: middle;
   }
 }

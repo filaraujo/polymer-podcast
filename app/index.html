@@ -9,6 +9,7 @@
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
   <!-- build:css styles/main.css -->
+  <link href='http://fonts.googleapis.com/css?family=Raleway:600,500,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild-->
 
@@ -19,11 +20,15 @@
   <!-- will be replaced with elements/elements.vulcanized.html -->
   <link rel="import" href="elements/elements.html">
   <link rel="import" href="../bower_components/akyral-layout/akyral-layout.html">
+  <link rel="import" href="../bower_components/iron-icon/iron-icon.html">
+  <link rel="import" href="../bower_components/iron-icons/av-icons.html">
+  <link rel="import" href="../bower_components/iron-icons/device-icons.html">
+  <link rel="import" href="../bower_components/iron-icons/social-icons.html">
   <!-- endreplace-->
 </head>
 
 <body>
-  <akyral-layout open type="parallax">
+  <akyral-layout type="parallax">
     <div drawer>
       <ul>
         <li>
@@ -41,23 +46,105 @@
           <p>Laboris consequat est nulla aliquip consectetur ipsum aliqua elit anim sit incididunt sunt.</p>
         </li>
       </ul>
-      <a href="#">
-
-      </a>
     </div>
     <div main>
-      main
+      <header>
+        <h1>Polymer Podcast</h1>
+        <nav>
+          <a href="#" active>
+            <iron-icon icon="device:multitrack-audio"></iron-icon>
+            Episodes
+          </a>
+          <a href="#">
+            <iron-icon icon="social:people"></iron-icon>
+            The Hosts
+          </a>
+        </nav>
+      </header>
+
+      <section class="latest">
+        <div>
+          <h2>Latest Episodes</h2>
+
+          <div class="episode-info">
+            <span>01</span>
+            <h3>History of Polymer</h3>
+            <p>Do irure proident adipisicing laborum ex labore est aliqua esse tempor commodo irure. In consequat officia eiusmod ea nisi adipisicing sunt incididunt sit do consequat reprehenderit. Laborum reprehenderit pariatur eiusmod eu id cupidatat cillum esse aliquip id ipsum. Non ullamco aute magna sint reprehenderit. Non ex proident tempor voluptate occaecat ullamco adipisicing minim anim.</p>
+          </div>
+
+          <dl class="episode-meta">
+            <dt>Published:</dt>
+            <dd>5/25/2015</dd>
+            <dt>Duration:</dt>
+            <dd>34 minutes</dd>
+          </dl>
+
+          <dl class="episode-panel">
+            <dt>
+              <iron-icon icon="av:mic-none"></iron-icon>
+              <span>Panel</span>
+            </dt>
+            <dd>
+              <div class="episode-panel-person">
+                <img src="http://placehold.it/36x36" alt="">
+                Filipe Araujo
+              </div>
+
+              <div class="episode-panel-person">
+                <img src="http://placehold.it/36x36" alt="">
+                Jonathan Belcher
+              </div>
+
+              <div class="episode-panel-person">
+                <img src="http://placehold.it/36x36" alt="">
+                William Jeffries
+              </div>
+
+              <div class="episode-panel-person">
+                <img src="http://placehold.it/36x36" alt="">
+                Dane O'Conner
+              </div>
+
+              <div class="episode-panel-person">
+                <img src="http://placehold.it/36x36" alt="">
+                Rob Dodson (Guest)
+              </div>
+            </dd>
+          </dl>
+        </div>
+      </section>
+
+
+
+      <section class="past">
+        <div>
+          <h2>Past Episodes</h2>
+
+          <template is="dom-bind" id="blah">
+            <template is="dom-repeat" items="{{items}}">
+              <div class="episode-info">
+                <span>{{item}}</span>
+                <h3>History of Polymer</h3>
+                <p>Do irure proident adipisicing laborum ex labore est aliqua esse tempor commodo irure. In consequat officia eiusmod ea nisi adipisicing sunt incididunt sit do consequat reprehenderit. Laborum reprehenderit pariatur eiusmod eu id cupidatat cillum esse aliquip id ipsum. Non ullamco aute magna sint reprehenderit. Non ex proident tempor voluptate occaecat ullamco adipisicing minim anim.</p>
+              </div>
+            </template>
+          </template>
+        </div>
+
+        <script>
+          var blah = document.querySelector('#blah');
+          blah.items = [1,2,3,4,5];
+        </script>
+      </section>
+
+      <div class="player" onclick="this.classList.toggle('player-active')">
+        <div class="player-poster"></div>
+        <span>Episode 1: History of Polymer</span>
+        <span class="player-time">12:57</span>
+        <span class="player-bar"></span>
+      </div>
     </div>
   </akyral-layout>
-
-
-
-  <div class="player" onclick="this.classList.toggle('player-active')">
-    <div class="player-poster"></div>
-    <span>Episode 1: History of Polymer</span>
-    <span class="player-time">12:57</span>
-    <span class="player-bar"></span>
-  </div>
 
 
   <!-- build:js scripts/app.js -->
