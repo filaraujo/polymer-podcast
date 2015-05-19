@@ -18,16 +18,17 @@
   <!-- endbuild -->
 
   <!-- will be replaced with elements/elements.vulcanized.html -->
-  <link rel="import" href="elements/elements.html">
-  <link rel="import" href="../bower_components/akyral-layout/akyral-layout.html">
-  <link rel="import" href="../bower_components/iron-icon/iron-icon.html">
-  <link rel="import" href="../bower_components/iron-icons/av-icons.html">
-  <link rel="import" href="../bower_components/iron-icons/device-icons.html">
-  <link rel="import" href="../bower_components/iron-icons/social-icons.html">
+  <link rel="import" href="elements/podcast-episode/podcast-episode.html">
+  <link rel="import" href="bower_components/akyral-layout/akyral-layout.html">
+  <link rel="import" href="bower_components/iron-icon/iron-icon.html">
+  <link rel="import" href="bower_components/iron-icons/av-icons.html">
+  <link rel="import" href="bower_components/iron-icons/device-icons.html">
+  <link rel="import" href="bower_components/iron-icons/social-icons.html">
   <!-- endreplace-->
 </head>
 
 <body>
+
   <akyral-layout type="parallax">
     <div drawer>
       <ul>
@@ -47,6 +48,7 @@
         </li>
       </ul>
     </div>
+
     <div main>
       <header>
         <h1>Polymer Podcast</h1>
@@ -62,89 +64,71 @@
         </nav>
       </header>
 
-      <section class="latest">
-        <div>
-          <h2>Latest Episodes</h2>
+      <template is="dom-bind">
 
-          <div class="episode-info">
-            <span>01</span>
-            <h3>History of Polymer</h3>
-            <p>Do irure proident adipisicing laborum ex labore est aliqua esse tempor commodo irure. In consequat officia eiusmod ea nisi adipisicing sunt incididunt sit do consequat reprehenderit. Laborum reprehenderit pariatur eiusmod eu id cupidatat cillum esse aliquip id ipsum. Non ullamco aute magna sint reprehenderit. Non ex proident tempor voluptate occaecat ullamco adipisicing minim anim.</p>
+        <section class="latest">
+          <div>
+            <h2>Latest Episodes</h2>
+            <podcast-episode
+              details
+              episode="{{episodes.0}}">
+            </podcast-episode>
           </div>
+        </section>
 
-          <dl class="episode-meta">
-            <dt>Published:</dt>
-            <dd>5/25/2015</dd>
-            <dt>Duration:</dt>
-            <dd>34 minutes</dd>
-          </dl>
-
-          <dl class="episode-panel">
-            <dt>
-              <iron-icon icon="av:mic-none"></iron-icon>
-              <span>Panel</span>
-            </dt>
-            <dd>
-              <div class="episode-panel-person">
-                <img src="http://placehold.it/36x36" alt="">
-                Filipe Araujo
-              </div>
-
-              <div class="episode-panel-person">
-                <img src="http://placehold.it/36x36" alt="">
-                Jonathan Belcher
-              </div>
-
-              <div class="episode-panel-person">
-                <img src="http://placehold.it/36x36" alt="">
-                William Jeffries
-              </div>
-
-              <div class="episode-panel-person">
-                <img src="http://placehold.it/36x36" alt="">
-                Dane O'Conner
-              </div>
-
-              <div class="episode-panel-person">
-                <img src="http://placehold.it/36x36" alt="">
-                Rob Dodson (Guest)
-              </div>
-            </dd>
-          </dl>
-        </div>
-      </section>
-
-
-
-      <section class="past">
-        <div>
-          <h2>Past Episodes</h2>
-
-          <template is="dom-bind" id="blah">
-            <template is="dom-repeat" items="{{items}}">
-              <div class="episode-info">
-                <span>{{item}}</span>
-                <h3>History of Polymer</h3>
-                <p>Do irure proident adipisicing laborum ex labore est aliqua esse tempor commodo irure. In consequat officia eiusmod ea nisi adipisicing sunt incididunt sit do consequat reprehenderit. Laborum reprehenderit pariatur eiusmod eu id cupidatat cillum esse aliquip id ipsum. Non ullamco aute magna sint reprehenderit. Non ex proident tempor voluptate occaecat ullamco adipisicing minim anim.</p>
-              </div>
+        <section class="past">
+          <div>
+            <h2>Past Episodes</h2>
+            <template is="dom-repeat" items="{{episodes}}">
+              <podcast-episode episode="{{item}}"></podcast-episode>
             </template>
-          </template>
-        </div>
+          </div>
+        </section>
+      </template>
 
-        <script>
-          var blah = document.querySelector('#blah');
-          blah.items = [1,2,3,4,5];
-        </script>
-      </section>
+      <script>
+        var tmpl = document.querySelector('template[is="dom-bind"]');
+        tmpl.episodes = [
+          {
+            duration: '42 minutes',
+            number: '02',
+            name: 'Testing Polymer',
+            panel: [
+              { name: 'Filipe Araujo', image: 'http://placehold.it/36x36' },
+              { name: 'Jonathan Belcher', image: 'http://placehold.it/36x36' },
+              { name: 'William Jeffries', image: 'http://placehold.it/36x36' },
+              { name: 'Dane O\'Conner', image: 'http://placehold.it/36x36' },
+              { name: 'Rob Dodson', isGuest: true, image: 'http://placehold.it/36x36' }
+            ],
+            published: '05/21/2015',
+            synopsis: 'Do irure proident adipisicing laborum ex labore est aliqua esse tempor commodo irure. In consequat officia eiusmod ea nisi adipisicing sunt incididunt sit do consequat reprehenderit. Laborum reprehenderit pariatur eiusmod eu id cupidatat cillum esse aliquip id ipsum. Non ullamco aute magna sint reprehenderit. Non ex proident tempor voluptate occaecat ullamco adipisicing minim anim.'
+          },
+          {
+            duration: '52 minutes',
+            number: '01',
+            name: 'History of Polymer',
+            panel: [
+              { name: 'Filipe Araujo', image: 'http://placehold.it/36x36' },
+              { name: 'Jonathan Belcher', image: 'http://placehold.it/36x36' },
+              { name: 'William Jeffries', image: 'http://placehold.it/36x36' },
+              { name: 'Dane O\'Conner', image: 'http://placehold.it/36x36' },
+              { name: 'Ian MacLeod', isGuest: true, image: 'http://placehold.it/36x36' }
+            ],
+            published: '05/20/2015',
+            synopsis: 'Duis in pariatur consequat incididunt est eiusmod in id ea voluptate adipisicing occaecat fugiat officia. Ipsum ut cupidatat occaecat fugiat in ipsum. Reprehenderit qui dolor dolore exercitation aute nostrud veniam in officia mollit. Laborum dolor eu est voluptate ea commodo eiusmod proident. Fugiat deserunt do commodo cupidatat ad. Ex mollit voluptate reprehenderit exercitation dolor commodo deserunt amet tempor do laborum.'
+          }
+        ]
+      </script>
 
-      <div class="player" onclick="this.classList.toggle('player-active')">
-        <div class="player-poster"></div>
-        <span>Episode 1: History of Polymer</span>
-        <span class="player-time">12:57</span>
-        <span class="player-bar"></span>
-      </div>
     </div>
   </akyral-layout>
+
+  <div class="player" onclick="this.classList.toggle('player-active')">
+    <div class="player-poster"></div>
+    <span>Episode 1: History of Polymer</span>
+    <span class="player-time">12:57</span>
+    <span class="player-bar"></span>
+  </div>
 
 
   <!-- build:js scripts/app.js -->
