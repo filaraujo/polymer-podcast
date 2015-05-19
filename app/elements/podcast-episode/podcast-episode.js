@@ -3,7 +3,10 @@
     is: 'podcast-episode',
 
     properties: {
-      details: Boolean,
+      details: {
+        type: Boolean,
+        value: false
+      },
 
       episode: {
         type: Object

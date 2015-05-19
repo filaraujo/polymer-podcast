@@ -13,6 +13,14 @@
     </div>
 
     <template is="dom-if" if="{{details}}">
+      <div class="podcast-episode__actions">
+        <button>
+          play <iron-icon icon="av:play-circle-outline"></iron-icon>
+        </button>
+      </div>
+    </template>
+
+    <template is="dom-if" if="{{details}}">
       <dl class="podcast-episode__meta">
         <dt>Published:</dt>
         <dd>{{episode.published}}</dd>
@@ -38,8 +46,6 @@
         </dd>
       </dl>
     </template>
-
-
 
   </template>
   <script src="podcast-episode.js"></script>

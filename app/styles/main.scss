@@ -117,8 +117,8 @@ $page-max-width: 800px;
 header {
   box-sizing: border-box;
   overflow: auto;
-  height: 420px;
-  padding: 150px 0 0;
+  height: 380px;
+  padding: 120px 0 0;
   position: relative;
 
   h1 {
@@ -148,7 +148,7 @@ nav {
     box-sizing: border-box;
     color: #fff;
     display: inline-block;
-    font-size: 14px;
+    font-size: 13px;
     line-height: $nav-height;
     height: $nav-height;
     text-decoration: none;

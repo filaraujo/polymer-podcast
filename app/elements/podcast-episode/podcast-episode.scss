@@ -5,32 +5,51 @@ $gray: #ddd;
 
 :host {
   display: block;
+  font-size: 14px;
 }
 
 .podcast-episode__info {
-  border-bottom: 1px solid $gray;
   overflow: auto;
-  padding-left: 120px;
+  padding: 14px 0 14px 100px;
   position: relative;
 
   span {
     color: $pink;
-    font-size: 80px;
+    font-size: 66px;
     font-weight: 300;
+    left: 10px;
+    line-height: 66px;
     position: absolute;
     top: 0;
-    left: 10px;
   }
 
   h3 {
     color: $darkblue;
-    font-size: 22px;
-    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
   }
 
   p {
-    font-size: 15px;
-    margin: 10px 0 24px;
+    margin: 10px 0 0;
+  }
+}
+
+.podcast-episode__actions {
+  padding: 0 0 10px 100px;
+  text-align: right;
+
+  button {
+    background: transparent;
+    border: 0;
+    color: $darkblue;
+    cursor: pointer;
+    padding: 4px 16px;
+    transition: color .3s;
+
+    &:hover {
+      color: $pink;
+    }
   }
 }
 
@@ -39,13 +58,22 @@ $gray: #ddd;
   padding: 14px 0;
   margin: 0;
   display: flex;
-  margin-left: 120px;
+  padding-left: 100px;
+
+  @media (max-width:600px) {
+    padding-left: 0;
+  }
 
   dt {
     color: $pink;
     flex: 0 0 80px;
     font-weight: 500;
-    margin-right: 10px;
+    padding-right: 10px;
+
+    @media (max-width:600px) {
+      text-align: right;
+      flex: 0 0 90px;
+    }
   }
 
   dd {
@@ -55,10 +83,32 @@ $gray: #ddd;
 
 .podcast-episode__meta {
   border-bottom: 1px solid $gray;
+  border-top: 1px solid $gray;
+
+  @media (max-width:600px) {
+    flex-wrap: wrap;
+    line-height: 46px;
+    padding: 0;
+  }
 
   dd {
     color: $black;
     flex: 2;
+
+    @media (max-width:600px) {
+      flex: 1 0 calc(100% - 100px);
+    }
+  }
+
+  @media (max-width:600px) {
+    dt {
+      text-align: center;
+    }
+
+    dd:first-of-type,
+    dt:first-of-type, {
+      border-bottom: 1px solid $gray;
+    }
   }
 
 }
@@ -89,6 +139,10 @@ $gray: #ddd;
     height: 36px;
     flex: 1 0 50%;
     margin-bottom: 6px;
+
+    @media (max-width:750px) {
+      flex: 1 0 100%;
+    }
   }
 
   img {
