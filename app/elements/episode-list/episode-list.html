@@ -1,0 +1,30 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../episode-synopsis/episode-synopsis.html">
+
+  <dom-module id="episode-list">
+
+    <link rel="import" type="css" href="episode-list.css">
+
+    <template>
+      <section class="episode-list__latest">
+        <div>
+          <h2>Latest Episodes</h2>
+          <episode-synopsis
+            details
+            episode="{{episodes.0}}">
+          </episode-synopsis>
+        </div>
+      </section>
+
+      <section class="episode-list__past">
+        <div>
+          <h2>Past Episodes</h2>
+          <template is="dom-repeat" items="{{episodes}}">
+            <episode-synopsis episode="{{item}}"></episode-synopsis>
+          </template>
+        </div>
+      </section>
+    </template>
+
+    <script src="episode-list.js"></script>
+</dom-module>

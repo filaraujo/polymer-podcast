@@ -1,0 +1,59 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+  <dom-module id="episode-synopsis">
+
+    <link rel="import" type="css" href="episode-synopsis.css">
+
+    <template>
+      <div class="episode-synopsis__info">
+        <span>{{episode.number}}</span>
+        <h3>{{episode.name}}</h3>
+        <p>{{episode.synopsis}}</p>
+      </div>
+
+      <template is="dom-if" if="{{details}}">
+        <div class="episode-synopsis__actions">
+          <button>
+            play <iron-icon icon="av:play-circle-outline"></iron-icon>
+          </button>
+        </div>
+      </template>
+
+      <template is="dom-if" if="{{!details}}">
+        <div class="episode-synopsis__actions">
+          <button on-click="onMoreInfo">
+            more info <iron-icon icon="icons:info-outline"></iron-icon>
+          </button>
+        </div>
+      </template>
+
+      <template is="dom-if" if="{{details}}">
+        <dl class="episode-synopsis__meta">
+          <dt>Published:</dt>
+          <dd>{{episode.published}}</dd>
+          <dt>Duration:</dt>
+          <dd>{{episode.duration}}</dd>
+        </dl>
+
+        <dl class="episode-synopsis__panel">
+          <dt>
+            <iron-icon icon="av:mic-none"></iron-icon>
+            <span>Panel</span>
+          </dt>
+          <dd>
+            <template is="dom-repeat" items="{{episode.panel}}">
+              <div>
+                <img src="{{item.image}}" alt="">
+                <span>{{item.name}}</span>
+                <template is="dom-if" if="{{item.isGuest}}">
+                  (Guest)
+                </template>
+              </div>
+            </template>
+          </dd>
+        </dl>
+      </template>
+    </template>
+
+    <script src="episode-synopsis.js"></script>
+</dom-module>

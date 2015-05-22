@@ -1,5 +1,7 @@
+@import 'color';
+
 body {
-  background: #fefefe;
+  background: $lightgray;
   color: #888;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
@@ -181,20 +183,20 @@ nav {
 }
 
 
-section {
-  padding: 40px;
+episode-entity {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  visibility: hidden;
 
-  h2 {
-    font-weight: 300;
+
+    display: block;
+    visibility: visible;
+
+  &[is-visible] {
+    display: block;
+    visibility: visible;
   }
-}
-
-.latest,
-.past > div {
-  margin: 0 auto;
-  max-width: 800px;
-}
-
-.past {
-  background: #fefefe;
 }

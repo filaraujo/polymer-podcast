@@ -1,0 +1,121 @@
+@import '../../styles/color';
+
+:host {
+  color: #fff;
+  display: block;
+  background: $pink;
+}
+
+dl,
+dd,
+dt {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 30px 0;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 400;
+  margin-bottom: 10px;
+
+  span:first-child {
+    font-size: 50px;
+    float: right;
+  }
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 400;
+  margin: 20px 0;
+
+
+  iron-icon {
+    height: 30px;
+    vertical-align: middle;
+    width: 30px;
+  }
+}
+
+.episode-entity__section {
+  color: rgba(0,0,0, .425);
+  font-weight: 400;
+
+  p {
+    padding-top: 10px;
+  }
+}
+
+.episode-entity__section-alternate {
+  background: rgba(0,0,0,.1);
+  color: rgba(0,0,0,.425);
+  font-weight: 400;
+  overflow: auto;
+}
+
+.episode-entity__section-alternate2 {
+  background: $black;
+  color: rgba(255,255,255,.5);
+  border-top: 1px solid  rgba(0,0,0,.1);
+  overflow: auto;
+}
+
+.episode-entity__centered {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.episode-entity__meta,
+.episode-entity__panel {
+  padding: 20px;
+
+  dt,
+  dd {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  dt {
+    /* color: rgba(255,255,255,.8); */
+    font-weight: 400;
+    width: 150px;
+  }
+}
+
+.episode-entity__meta + .episode-entity__meta {
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.episode-entity__panelists {
+  margin-bottom: 20px;
+}
+
+.episode-entity__panelist {
+  display: inline-block;
+  margin: 30px 20px 0 0;
+  padding-right: 20px;
+  padding-left: 44px;
+  position: relative;
+
+  img {
+    border: 2px solid $pink;
+    border-radius: 50%;
+    height: 30px;
+    left: 0;
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    width: 30px;
+  }
+
+  a {
+    display: block;
+    color: $pink;
+    font-size: 13px;
+    text-decoration: none;
+  }
+}

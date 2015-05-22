@@ -1,0 +1,68 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+  <dom-module id="episode-entity">
+
+    <link rel="import" type="css" href="episode-entity.css">
+
+    <template>
+      <button on-click="onClose">
+        close
+      </button>
+
+      <section class="episode-entity__section">
+        <div class="episode-entity__centered">
+          <h2>
+            <span>{{episode.number}}</span>
+            <span>{{episode.name}}</span>
+          </h2>
+          <p>{{episode.synopsis}}</p>
+        </div>
+      </section>
+
+      <section class="episode-entity__section-alternate">
+        <div class="episode-entity__centered">
+          <dl class="episode-entity__meta">
+            <dt>Published:</dt>
+            <dd>{{episode.published}}</dd>
+          </dl>
+
+          <dl class="episode-entity__meta">
+            <dt>Duration:</dt>
+            <dd>{{episode.duration}}</dd>
+          </dl>
+        </div>
+      </section>
+
+      <section class="episode-entity__section-alternate2">
+        <div class="episode-entity__centered">
+          <h3>
+            <iron-icon icon="av:mic"></iron-icon>
+            Panel
+          </h3>
+          <div class="episode-entity__panelists">
+            <template is="dom-repeat" items="{{episode.panel}}">
+              <div class="episode-entity__panelist">
+                <img src="{{item.image}}" alt="">
+                <span>{{item.name}}</span>
+                <template is="dom-if" if="{{item.isGuest}}">
+                  (Guest)
+                </template>
+                <a href="#">{{item.twitter}}</a>
+              </div>
+          </template>
+          </div>
+        </div>
+      </section>
+
+      <section class="episode-entity__section-alternate">
+        <div class="episode-entity__centered">
+          <h3>
+            <iron-icon icon="icons:speaker-notes"></iron-icon>
+            Discussion
+          </h3>
+        </div>
+      </section>
+    </template>
+
+    <script src="episode-entity.js"></script>
+</dom-module>

@@ -1,0 +1,28 @@
+@import '../../styles/color';
+
+:host {
+  display: block;
+  border: 1px solid #000;
+}
+
+section {
+  padding: 40px;
+
+  h2 {
+    font-weight: 300;
+  }
+}
+
+.episode-list__latest,
+.episode-list__past > div {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.episode-list__past {
+  background: #fefefe;
+
+  episode-synopsis + episode-synopsis {
+    border-top: 1px solid $gray;
+  }
+}

@@ -1,6 +1,6 @@
 (function() {
   Polymer({
-    is: 'podcast-episode',
+    is: 'episode-synopsis',
 
     properties: {
       details: {
@@ -13,10 +13,8 @@
       }
     },
 
-    ready: function() {
-      console.log(this.episode);
+    onMoreInfo: function() {
+      this.fire('episode-synopsis--more-info', {episode: this.episode});
     }
-
-
   });
 }());
