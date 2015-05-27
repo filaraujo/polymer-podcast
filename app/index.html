@@ -21,7 +21,6 @@
   <link rel="import" href="elements/episode-api/episode-api.html">
   <link rel="import" href="elements/episode-entity/episode-entity.html">
   <link rel="import" href="elements/episode-list/episode-list.html">
-  <link rel="import" href="bower_components/akyral-layout/akyral-layout.html">
   <link rel="import" href="bower_components/iron-icon/iron-icon.html">
   <link rel="import" href="bower_components/iron-icons/iron-icons.html">
   <link rel="import" href="bower_components/iron-icons/av-icons.html">
@@ -32,62 +31,40 @@
 
 <body>
   <template is="dom-bind">
-    <akyral-layout type="parallax">
-      <div drawer>
-        <ul>
-          <li>
-            <span>Episode 3</span>
-            <p>Laboris consequat est nulla aliquip consectetur ipsum aliqua elit anim sit incididunt sunt.</p>
-          </li>
+    <header>
+      <h1>Polymer Podcast</h1>
+      <nav>
+        <a href="#" active>
+          <iron-icon icon="device:multitrack-audio"></iron-icon>
+          Episodes
+        </a>
+        <a href="#">
+          <iron-icon icon="social:people"></iron-icon>
+          The Hosts
+        </a>
+      </nav>
+    </header>
 
-          <li>
-            <span>Episode 2</span>
-            <p>Laboris consequat est nulla aliquip consectetur ipsum aliqua elit anim sit incididunt sunt.</p>
-          </li>
+    <episode-api episodes="{{episodes}}"></episode-api>
 
-          <li>
-            <span>Episode 1</span>
-            <p>Laboris consequat est nulla aliquip consectetur ipsum aliqua elit anim sit incididunt sunt.</p>
-          </li>
-        </ul>
-      </div>
-
-      <div main>
-        <header>
-          <h1>Polymer Podcast</h1>
-          <nav>
-            <a href="#" active>
-              <iron-icon icon="device:multitrack-audio"></iron-icon>
-              Episodes
-            </a>
-            <a href="#">
-              <iron-icon icon="social:people"></iron-icon>
-              The Hosts
-            </a>
-          </nav>
-        </header>
-
-        <episode-api episodes="{{episodes}}"></episode-api>
-
-        <episode-list
-          episodes="{{episodes}}"
-          on-episode-synopsis--more-info="setEpisode">
-        </episode-list>
-      </div>
-    </akyral-layout>
+    <episode-list
+      episodes="{{episodes}}"
+      on-episode-synopsis--more-info="setEpisode">
+    </episode-list>
 
     <episode-entity
-      episode="{{episodes.0}}"
+      id="entity"
+      episode="{{episode}}"
       is-visible$="{{visible}}"
       on-episode-entity--close="unsetEpisode">
     </episode-entity>
 
-    <div class="player" onclick="this.classList.toggle('player-active')">
+    <!-- <div class="player" onclick="this.classList.toggle('player-active')">
       <div class="player-poster"></div>
       <span>Episode 1: History of Polymer</span>
       <span class="player-time">12:57</span>
       <span class="player-bar"></span>
-    </div>
+    </div> -->
 
   </template>
 

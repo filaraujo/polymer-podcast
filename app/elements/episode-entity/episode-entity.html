@@ -5,8 +5,8 @@
     <link rel="import" type="css" href="episode-entity.css">
 
     <template>
-      <button on-click="onClose">
-        close
+      <button class="episode-entity__close-btn" on-click="onClose">
+        <iron-icon icon="icons:close"></iron-icon>
       </button>
 
       <section class="episode-entity__section">
@@ -60,6 +60,22 @@
             <iron-icon icon="icons:speaker-notes"></iron-icon>
             Discussion
           </h3>
+
+          <div class="episode-entity__discussion">
+            <template is="dom-repeat" items="{{episode.topics}}">
+              <div class="episode-entity__discussion-point">
+                <span class="episode-entity__discussion-time">{{item.time}}</span>
+                - <span>{{item.topic}}</span>
+                <template is="dom-if" if="{{item.links}}">
+                  <div>
+                    <template is="dom-repeat" items="{{item.links}}">
+                      <a href="{{item.url}}" target="_blank">{{item.link}}</a>
+                    </template>
+                  </div>
+                </template>
+              </div>
+            </template>
+          </div>
         </div>
       </section>
     </template>
