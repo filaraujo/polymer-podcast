@@ -1,10 +1,11 @@
 @import '../../styles/color';
 
 :host {
+  background: $pink;
   color: #fff;
   display: block;
-  background: $pink;
   overflow: auto;
+  padding-top: 40px;
 }
 
 dl,
@@ -26,6 +27,7 @@ h2 {
   span:first-child {
     font-size: 50px;
     float: right;
+    margin-left: 10px;
   }
 }
 
@@ -54,8 +56,8 @@ h3 {
   border: 0;
   cursor: pointer;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 10px;
+  right: 10px;
 
   &:hover {
     color: $gray;

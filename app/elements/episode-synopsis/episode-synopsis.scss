@@ -135,7 +135,7 @@
   div {
     height: 36px;
     flex: 1 0 50%;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
 
     @media (max-width:750px) {
       flex: 1 0 100%;
@@ -143,12 +143,12 @@
   }
 
   img {
-    border: 2px solid $black;
+    border: 3px solid $lightgray;
     border-radius: 50%;
-    height: 30px;
+    height: 33px;
     margin-right: 6px;
     overflow: hidden;
     vertical-align: middle;
-    width: 30px;
+    width: 33px;
   }
 }
