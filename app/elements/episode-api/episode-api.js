@@ -1,5 +1,5 @@
 (function() {
-
+  // make this return latest
   var episodes = [
     {
       duration: '48 minutes 50 seconds',
@@ -142,6 +142,5 @@
         value: episodes
       }
     }
-
   });
 }());

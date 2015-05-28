@@ -13,10 +13,6 @@
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild-->
 
-  <!-- build:js bower_components/webcomponentsjs/webcomponents.min.js -->
-  <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
-  <!-- endbuild -->
-
   <!-- will be replaced with elements/elements.vulcanized.html -->
   <link rel="import" href="bower_components/iron-icon/iron-icon.html">
   <link rel="import" href="bower_components/iron-icons/iron-icons.html">
@@ -73,22 +69,15 @@
 
   </template>
 
-  <script>
-    var tmpl = document.querySelector('template[is="dom-bind"]');
 
-    tmpl.setEpisode = function(e) {
-      this.episode = e.detail.episode;
-      this.visible = true;
-    }
 
-    tmpl.unsetEpisode = function(e) {
-      this.visible = false;
-    }
-  </script>
+  <!-- build:js bower_components/webcomponentsjs/webcomponents.min.js -->
+  <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+  <!-- endbuild -->
 
-  <!-- #build:js scripts/app.js -->
-  <!-- <script src="scripts/app.js"></script> -->
-  <!-- #endbuild-->
+  <!-- build:js scripts/app.js -->
+  <script src="scripts/app.js"></script>
+  <!-- endbuild-->
 </body>
 
 </html>
