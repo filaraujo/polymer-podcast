@@ -8,7 +8,7 @@
   <title>Polymer Podcast</title>
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-  <link href="http://fonts.googleapis.com/css?family=Raleway:600,500,400,300" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Raleway:500,400,300|Source+Sans+Pro:200" rel="stylesheet" type="text/css">
   <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild-->
@@ -18,21 +18,25 @@
   <!-- endbuild -->
 
   <!-- will be replaced with elements/elements.vulcanized.html -->
-  <link rel="import" href="elements/episode-api/episode-api.html">
-  <link rel="import" href="elements/episode-entity/episode-entity.html">
-  <link rel="import" href="elements/episode-list/episode-list.html">
   <link rel="import" href="bower_components/iron-icon/iron-icon.html">
   <link rel="import" href="bower_components/iron-icons/iron-icons.html">
   <link rel="import" href="bower_components/iron-icons/av-icons.html">
   <link rel="import" href="bower_components/iron-icons/device-icons.html">
   <link rel="import" href="bower_components/iron-icons/social-icons.html">
+  <link rel="import" href="elements/episode-api/episode-api.html">
+  <link rel="import" href="elements/episode-entity/episode-entity.html">
+  <link rel="import" href="elements/episode-list/episode-list.html">
+  <link rel="import" href="elements/podcast-icons/podcast-icons.html">
   <!-- endreplace-->
 </head>
 
 <body>
   <template is="dom-bind">
     <header>
-      <h1>Polymer Podcast</h1>
+      <h1>
+        <iron-icon icon="podcast:logo"></iron-icon>
+        Polymer <span>Podcast</span>
+      </h1>
       <nav>
         <a href="#" active>
           <iron-icon icon="device:multitrack-audio"></iron-icon>
@@ -41,6 +45,7 @@
         <a href="#">
           <iron-icon icon="social:people"></iron-icon>
           The Hosts
+          <span>(coming soon)</span>
         </a>
       </nav>
     </header>

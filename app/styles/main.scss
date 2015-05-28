@@ -81,16 +81,28 @@ $page-max-width: 800px;
 header {
   box-sizing: border-box;
   overflow: auto;
-  height: 380px;
-  padding: 120px 0 0;
+  height: 330px;
+  font-family: 'Source Sans Pro';
+  padding: 80px 0 0;
   position: relative;
 
   h1 {
     color: #333;
-    font-size: 40px;
-    font-weight: 300;
-    margin: 25px 0;
+    font-size: 42px;
+    font-weight: 200;
+    margin: 25px auto;
+    max-width: $page-max-width;
     text-align: center;
+  }
+
+  span {
+    color: $mediumgray;
+  }
+
+  iron-icon[icon="podcast:logo"] {
+    height: 96px;
+    margin-right: 6px;
+    width: 96px;
   }
 }
 
