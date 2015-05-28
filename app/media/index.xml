@@ -7,7 +7,8 @@
       provides syntactic sugar on top of web components.</description>
     <language>en-us</language>
     <copyright>Polymer Podcast 2015</copyright>
-    <atom:link href="https://www.dropbox.com/s/d7l0fgd880co0re/index.xml?dl=1" rel="self" type="application/rss+xml"/>
+    <atom:link href="http://www.polymerpodcast.com/media/index.xml" rel="self" type="application/rss+xml"/>
+    <itunes:new-feed-url href="http://www.polymerpodcast.com/media/index.xml" rel="self" type="application/rss+xml"></itunes:new-feed-url>
     <lastBuildDate>Wed, 13 Aug 2014 15:47:00 GMT</lastBuildDate>
     <itunes:author>Polymer Podcast</itunes:author>
     <itunes:summary>A podcast about Polymer.js</itunes:summary>
@@ -16,16 +17,16 @@
       <itunes:email>wm.jeffries@gmail.com</itunes:email>
     </itunes:owner>
     <itunes:explicit>No</itunes:explicit>
-    <itunes:image href="http://www.placebear.com/400/400"/>
+    <itunes:image href="http://www.polymerpodcast.com/media/album.jpg"/>
     <itunes:category text="Technology"> </itunes:category>
     <item>
       <title>History of Polymer</title>
       <link>http://testing.com/Our_first_item.mp3</link>
-      <pubDate>Thu, 28 May 2015 15:47:00 GMT</pubDate>
-      <description>A discussion of the history of Polymer.</description>
-      <enclosure url="https://www.dropbox.com/s/oyog8grzgv5e55t/history-of-polymer-final.mp3?dl=1" length="95573390" type="audio/mpeg"/>
+      <pubDate>Wed, 27 May 2015 10:47:00 GMT</pubDate>
+      <description>In this episode, we talk with Rob Dodson, developer evangelist for the Polymer Project, about the history of Polymer. We also get to to hear Rob's thoughts on the future of the web and the role Polymer will play in it.</description>
+      <enclosure url="http://www.polymerpodcast.com/media/history-of-polymer-final.mp3" length="95573390" type="audio/mpeg"/>
       <itunes:summary>History of Polymer with Rob Dodson</itunes:summary>
-      <itunes:image href="http://www.placebear.com/400/400"/>
+      <itunes:image href="http://www.polymerpodcast.com/media/album.jpg"/>
     </item>
   </channel>
 </rss>
