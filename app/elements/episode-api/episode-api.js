@@ -80,7 +80,7 @@
       published: '05/21/2015',
       synopsis: 'Do irure proident adipisicing laborum ex labore est aliqua esse tempor commodo irure. In consequat officia eiusmod ea nisi adipisicing sunt incididunt sit do consequat reprehenderit. Laborum reprehenderit pariatur eiusmod eu id cupidatat cillum esse aliquip id ipsum. Non ullamco aute magna sint reprehenderit. Non ex proident tempor voluptate occaecat ullamco adipisicing minim anim.',
       topics: []
-    },
+    }
   ];
 
   Polymer({

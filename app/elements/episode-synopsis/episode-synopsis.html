@@ -11,21 +11,21 @@
         <p>{{episode.synopsis}}</p>
       </div>
 
-      <template is="dom-if" if="{{details}}">
+      <!-- <template is="dom-if" if="{{details}}">
         <div class="episode-synopsis__actions">
           <button>
             play <iron-icon icon="av:play-circle-outline"></iron-icon>
           </button>
         </div>
-      </template>
+      </template> -->
 
-      <template is="dom-if" if="{{!details}}">
+      <!-- <template is="dom-if" if="{{!details}}"> -->
         <div class="episode-synopsis__actions">
           <button on-click="onMoreInfo">
             more info <iron-icon icon="icons:info-outline"></iron-icon>
           </button>
         </div>
-      </template>
+      <!-- </template> -->
 
       <template is="dom-if" if="{{details}}">
         <dl class="episode-synopsis__meta">
