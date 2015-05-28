@@ -13,7 +13,7 @@
         {name: 'Taylor Savage', isGuest: true, image: 'https://pbs.twimg.com/profile_images/547545280841670657/ZtHyM2rc_bigger.jpeg', twitter: 'taylorthesavage'}
       ],
       published: '05/20/2015',
-      synopsis: 'Duis in pariatur consequat incididunt est eiusmod in id ea voluptate adipisicing occaecat fugiat officia. Ipsum ut cupidatat occaecat fugiat in ipsum. Reprehenderit qui dolor dolore exercitation aute nostrud veniam in officia mollit. Laborum dolor eu est voluptate ea commodo eiusmod proident. Fugiat deserunt do commodo cupidatat ad. Ex mollit voluptate reprehenderit exercitation dolor commodo deserunt amet tempor do laborum.',
+      synopsis: "In this episode, we talk with Taylor Savage, project manager for the Polymer Project, about the announcements at Google I/O and Polymer 1.0. We also learn about the Polymer starter kit, the new web component catalogs, and how the polymer team gets things done!",
       topics: [
         {time: '0:45', topic: 'Taylor Savage Introduction'},
         {time: '1:00', topic: 'Joining Polymer Team'},
@@ -78,7 +78,7 @@
         {name: 'Rob Dodson', isGuest: true, image: 'https://pbs.twimg.com/profile_images/378800000232696683/736a167223708fbbb2e910da863541cc_bigger.jpeg', twitter: 'rob_dodson'}
       ],
       published: '05/21/2015',
-      synopsis: 'Do irure proident adipisicing laborum ex labore est aliqua esse tempor commodo irure. In consequat officia eiusmod ea nisi adipisicing sunt incididunt sit do consequat reprehenderit. Laborum reprehenderit pariatur eiusmod eu id cupidatat cillum esse aliquip id ipsum. Non ullamco aute magna sint reprehenderit. Non ex proident tempor voluptate occaecat ullamco adipisicing minim anim.',
+      synopsis: "In this episode, we talk with Rob Dodson, developer evangelist for the Polymer Project, about the history of Polymer. We also get to to hear Rob's thoughts on the future of the web and the role Polymer will play in it.",
       topics: []
     }
   ];
