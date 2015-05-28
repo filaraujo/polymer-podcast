@@ -77,6 +77,13 @@ gulp.task('images', function () {
     .pipe($.size({title: 'images'}));
 });
 
+// Media
+gulp.task('media', function () {
+  return gulp.src('app/media/**/*')
+    .pipe(gulp.dest('dist/media'))
+    .pipe($.size({title: 'media'}));
+});
+
 // Copy All Files At The Root Level (app)
 gulp.task('copy', function () {
   var app = gulp.src([
@@ -191,7 +198,7 @@ gulp.task('default', ['clean'], function (cb) {
   runSequence(
     ['copy', 'styles'],
     'elements',
-    ['jshint', 'images', 'fonts', 'html'],
+    ['jshint', 'images', 'media', 'fonts', 'html'],
     //'vulcanize',
     cb);
 });
