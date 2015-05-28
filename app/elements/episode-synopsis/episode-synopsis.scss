@@ -10,16 +10,6 @@
   padding: 14px 0 14px 100px;
   position: relative;
 
-  span {
-    color: $pink;
-    font-size: 66px;
-    font-weight: 300;
-    left: 10px;
-    line-height: 66px;
-    position: absolute;
-    top: 0;
-  }
-
   h3 {
     color: $darkblue;
     font-size: 20px;
@@ -32,9 +22,27 @@
   }
 }
 
+.episode-synopsis__number {
+  color: $pink;
+  font-size: 66px;
+  font-weight: 300;
+  left: 10px;
+  line-height: 66px;
+  position: absolute;
+  top: 0;
+}
+
 .episode-synopsis__actions {
   padding: 0 0 10px 100px;
   text-align: right;
+
+  span {
+    color: #888;
+    float: left;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 30px;
+  }
 
   button {
     background: transparent;

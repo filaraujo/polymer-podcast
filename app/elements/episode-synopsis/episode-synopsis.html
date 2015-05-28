@@ -6,7 +6,7 @@
 
     <template>
       <div class="episode-synopsis__info">
-        <span>{{episode.number}}</span>
+        <span class="episode-synopsis__number">{{episode.number}}</span>
         <h3>{{episode.name}}</h3>
         <p>{{episode.synopsis}}</p>
       </div>
@@ -21,6 +21,9 @@
 
       <!-- <template is="dom-if" if="{{!details}}"> -->
         <div class="episode-synopsis__actions">
+          <template is="dom-if" if="{{!details}}">
+            <span>{{episode.published}}</span>
+          </template>
           <button on-click="onMoreInfo">
             more info <iron-icon icon="icons:info-outline"></iron-icon>
           </button>

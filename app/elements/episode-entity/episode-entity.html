@@ -47,7 +47,7 @@
                 <template is="dom-if" if="{{item.isGuest}}">
                   (Guest)
                 </template>
-                <a href="#">{{item.twitter}}</a>
+                <a href="{{item.twitterUrl}}" target="_blank">{{item.twitter}}</a>
               </div>
           </template>
           </div>
@@ -65,7 +65,7 @@
             <template is="dom-repeat" items="{{episode.topics}}">
               <div class="episode-entity__discussion-point">
                 <span class="episode-entity__discussion-time">{{item.time}}</span>
-                - <span>{{item.topic}}</span>
+                <span>{{item.topic}}</span>
                 <template is="dom-if" if="{{item.links}}">
                   <div>
                     <template is="dom-repeat" items="{{item.links}}">
