@@ -2,7 +2,7 @@
 
   var episodes = [
     {
-      duration: '52 minutes',
+      duration: '48 minutes 50 seconds',
       number: '02',
       name: 'Polymer I/O',
       panel: [
@@ -65,7 +65,7 @@
       ]
     },
     {
-      duration: '42 minutes',
+      duration: '1 hour 6 minutes 22 seconds',
       number: '01',
       name: 'History of Polymer',
       panel: [
