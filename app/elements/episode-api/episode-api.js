@@ -13,7 +13,7 @@
         {name: 'Taylor Savage', isGuest: true, image: 'https://pbs.twimg.com/profile_images/547545280841670657/ZtHyM2rc_bigger.jpeg', twitter: 'taylorthesavage', twitterUrl: 'https://twitter.com/taylorthesavage'}
       ],
       published: '05/29/2015',
-      synopsis: 'In this episode, we talk with Taylor Savage, project manager for the Polymer Project, about the announcements at Google I/O and Polymer 1.0. We also learn about the Polymer starter kit, the new web component catalogs, and how the polymer team gets things done!',
+      synopsis: 'In this episode, we talk with Taylor Savage, product manager for the Polymer Project, about the announcements at Google I/O and Polymer 1.0. We also learn about the Polymer starter kit, the new web component catalogs, and how the polymer team gets things done!',
       topics: [
         {time: '0:45', topic: 'Taylor Savage Introduction'},
         {time: '1:00', topic: 'Joining Polymer Team'},
