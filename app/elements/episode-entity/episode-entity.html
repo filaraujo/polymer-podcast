@@ -69,7 +69,10 @@
                 <template is="dom-if" if="{{item.links}}">
                   <div>
                     <template is="dom-repeat" items="{{item.links}}">
-                      <a href="{{item.url}}" target="_blank">{{item.link}}</a>
+                      <a href="{{item.url}}"
+                        on-click="onClick"
+                        target="_blank"
+                        title="{{item.link}}">{{item.link}}</a>
                     </template>
                   </div>
                 </template>
