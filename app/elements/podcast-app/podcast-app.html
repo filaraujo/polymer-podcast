@@ -1,0 +1,47 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../elements/episode-api/episode-api.html">
+<link rel="import" href="../../elements/episode-entity/episode-entity.html">
+<link rel="import" href="../../elements/episode-list/episode-list.html">
+
+<dom-module id="podcast-app">
+
+  <link rel="import" type="css" href="podcast-app.css">
+
+  <template>
+
+    <episode-api episodes="{{episodes}}"></episode-api>
+
+    <header>
+      <h1>
+        <iron-icon icon="podcast:logo"></iron-icon>
+        Polymer <span>Podcast</span>
+      </h1>
+      <nav>
+        <a href="#" active>
+          <iron-icon icon="device:graphic-eq"></iron-icon>
+          Episodes
+        </a>
+        <a href="#">
+          <iron-icon icon="social:people"></iron-icon>
+          The Hosts
+          <span>(coming soon)</span>
+        </a>
+      </nav>
+    </header>
+
+    <episode-list
+      episodes="{{episodes}}"
+      on-episode-synopsis--more-info="setEpisode">
+    </episode-list>
+
+    <episode-entity
+      id="entity"
+      episode="{{episode}}"
+      is-visible$="{{visible}}"
+      on-episode-entity--close="unsetEpisode">
+    </episode-entity>
+
+  </template>
+
+  <script src="podcast-app.js"></script>
+</dom-module>

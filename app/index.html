@@ -9,9 +9,27 @@
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
   <link href="http://fonts.googleapis.com/css?family=Raleway:500,400,300|Source+Sans+Pro:200" rel="stylesheet" type="text/css">
-  <!-- build:css styles/main.css -->
-  <link rel="stylesheet" href="styles/main.css">
-  <!-- endbuild-->
+  <!-- #build:css styles/main.css -->
+  <!-- <link rel="stylesheet" href="styles/main.css"> -->
+  <!-- #endbuild-->
+
+  <!-- prevent a request with inline base styles -->
+  <style>
+    body {
+      background: #f4f4f4;
+      color: #888;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      min-height: 100vh;
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+
+
+  <!-- build:js bower_components/webcomponentsjs/webcomponents.min.js -->
+  <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+  <!-- endbuild -->
 
   <!-- will be replaced with elements/elements.vulcanized.html -->
   <link rel="import" href="bower_components/iron-icon/iron-icon.html">
@@ -19,65 +37,27 @@
   <link rel="import" href="bower_components/iron-icons/av-icons.html">
   <link rel="import" href="bower_components/iron-icons/device-icons.html">
   <link rel="import" href="bower_components/iron-icons/social-icons.html">
-  <link rel="import" href="elements/episode-api/episode-api.html">
-  <link rel="import" href="elements/episode-entity/episode-entity.html">
-  <link rel="import" href="elements/episode-list/episode-list.html">
   <link rel="import" href="elements/podcast-icons/podcast-icons.html">
+  <link rel="import" href="elements/podcast-app/podcast-app.html">
   <!-- endreplace-->
 </head>
 
 <body>
-  <template is="dom-bind">
-    <header>
-      <h1>
-        <iron-icon icon="podcast:logo"></iron-icon>
-        Polymer <span>Podcast</span>
-      </h1>
-      <nav>
-        <a href="#" active>
-          <iron-icon icon="device:multitrack-audio"></iron-icon>
-          Episodes
-        </a>
-        <a href="#">
-          <iron-icon icon="social:people"></iron-icon>
-          The Hosts
-          <span>(coming soon)</span>
-        </a>
-      </nav>
-    </header>
+  <podcast-app></podcast-app>
 
-    <episode-api episodes="{{episodes}}"></episode-api>
+  <!-- #build:js scripts/app.js -->
+  <!-- <script src="scripts/app.js"></script> -->
+  <!-- #endbuild-->
 
-    <episode-list
-      episodes="{{episodes}}"
-      on-episode-synopsis--more-info="setEpisode">
-    </episode-list>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    <episode-entity
-      id="entity"
-      episode="{{episode}}"
-      is-visible$="{{visible}}"
-      on-episode-entity--close="unsetEpisode">
-    </episode-entity>
-
-    <!-- <div class="player" onclick="this.classList.toggle('player-active')">
-      <div class="player-poster"></div>
-      <span>Episode 1: History of Polymer</span>
-      <span class="player-time">12:57</span>
-      <span class="player-bar"></span>
-    </div> -->
-
-  </template>
-
-
-
-  <!-- build:js bower_components/webcomponentsjs/webcomponents.min.js -->
-  <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
-  <!-- endbuild -->
-
-  <!-- build:js scripts/app.js -->
-  <script src="scripts/app.js"></script>
-  <!-- endbuild-->
+    window.ga('create', 'UA-63535008-1', 'auto');
+    window.ga('send', 'pageview');
+  </script>
 </body>
 
 </html>
