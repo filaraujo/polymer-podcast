@@ -14,6 +14,16 @@ header {
   padding: 80px 0 0;
   position: relative;
 
+  @media (max-width: 800px) {
+    height: 310px;
+    padding: 70px 0 0;
+  }
+
+  @media (max-width: 600px) {
+    height: 300px;
+    padding: 60px 0 0;
+  }
+
   h1 {
     color: #333;
     font-size: 42px;
@@ -21,6 +31,14 @@ header {
     margin: 25px auto;
     max-width: $page-max-width;
     text-align: center;
+
+    @media (max-width: 800px) {
+      font-size: 34px;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 38px;
+    }
   }
 
   span {
@@ -31,6 +49,16 @@ header {
     height: 96px;
     margin-right: 6px;
     width: 96px;
+
+    @media (max-width: 800px) {
+        height: 88px;
+        width: 88px;
+    }
+
+    @media (max-width: 500px) {
+        height: 80px;
+        width: 80px;
+    }
   }
 }
 
@@ -74,6 +102,10 @@ nav {
       }
     }
 
+
+    span {
+      font-size: 10px;
+    }
     iron-icon {
       height: 26px;
       margin-right: 4px;
