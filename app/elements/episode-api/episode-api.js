@@ -70,9 +70,9 @@
       name: 'History of Polymer',
       panel: [
         {name: 'Filipe Araujo', image: 'https://pbs.twimg.com/profile_images/478931548872249345/TEedVwOK_bigger.jpeg', twitter: 'filipearaujo'},
-        {name: 'Jonathan Belcher', image: 'https://pbs.twimg.com/profile_images/478931548872249345/TEedVwOK_bigger.jpeg', twitter: 'belcherj'},
-        {name: 'William Jeffries', image: 'https://pbs.twimg.com/profile_images/478931548872249345/TEedVwOK_bigger.jpeg', twitter: 'williamcodes'},
-        {name: 'Dane O\'Conner', image: 'https://pbs.twimg.com/profile_images/478931548872249345/TEedVwOK_bigger.jpeg', twitter: 'thedeeno'},
+        {name: 'Jonathan Belcher', image: 'https://pbs.twimg.com/profile_images/529291762649403392/Pt7LuHxE_bigger.jpeg', twitter: 'belcherj'},
+        {name: 'William Jeffries', image: 'https://pbs.twimg.com/profile_images/464444006017937408/aU8lcuBL_bigger.jpeg', twitter: 'williamcodes'},
+        {name: 'Dane O\'Conner', image: 'https://pbs.twimg.com/profile_images/378800000832830634/e0021647f2f55fcfabd70f506b1852e6_bigger.png', twitter: 'thedeeno'},
         {name: 'Rob Dodson', isGuest: true, image: 'https://pbs.twimg.com/profile_images/378800000232696683/736a167223708fbbb2e910da863541cc_bigger.jpeg', twitter: 'rob_dodson'}
       ],
       published: '05/28/2015',
