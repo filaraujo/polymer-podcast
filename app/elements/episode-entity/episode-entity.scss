@@ -21,7 +21,7 @@ p {
 
 h2 {
   font-size: 50px;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 10px;
 
   span:first-child {
@@ -33,7 +33,7 @@ h2 {
 
 h3 {
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 300;
   margin: 20px 0 30px;
   position: relative;
   padding-left: 40px;
@@ -74,8 +74,8 @@ h3 {
 }
 
 .episode-entity__section {
-  color: rgba(0,0,0, .425);
-  font-weight: 400;
+  color: rgba(255,255,255, .625);
+  font-weight: 300;
 
   p {
     padding-top: 10px;
@@ -84,7 +84,7 @@ h3 {
 
 .episode-entity__section-alternate {
   background: rgba(0,0,0,.1);
-  color: rgba(0,0,0,.425);
+  color: rgba(255,255,255, .625);
   font-weight: 400;
   overflow: auto;
 }
@@ -112,6 +112,7 @@ h3 {
   }
 
   dt {
+    color: rgba(0,0,0,.4);
     font-weight: 500;
     width: 150px;
   }
@@ -123,7 +124,7 @@ h3 {
 }
 
 .episode-entity__meta + .episode-entity__meta {
-  border-top: 1px solid rgba(0,0,0,.1);
+  border-top: 1px solid rgba(255,255,255, .2);
 }
 
 .episode-entity__panelists {
@@ -191,11 +192,12 @@ h3 {
   }
 
   + .episode-entity__discussion-point {
-    border-top: 1px solid rgba(0,0,0,.1);
+    border-top: 1px solid rgba(255,255,255, .2);
   }
 }
 
 .episode-entity__discussion-time {
+  color: rgba(0,0,0,.4);
   font-weight: 500;
   margin: 0 10px 0 20px;
 }

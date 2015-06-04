@@ -2,6 +2,10 @@
   // make this return latest
   var episodes = [
     {
+      name: 'Polymer I/O',
+      synopsis: 'We talk to Ian MacLeod, core architect behind web-component-tester about testing Polymer.'
+    },
+    {
       duration: '48 minutes 50 seconds',
       number: '02',
       name: 'Polymer I/O',
@@ -127,10 +131,29 @@
         {time: '1:06:16', topic: 'Support & Sponsors', links: [
           {link: 'Sungard', url: 'http://sungard.com/'}
         ]}
-
       ]
     }
   ];
+
+  Object.defineProperty(episodes, 'published', {
+    value: episodes.filter(function(episode) {
+      return episode.published;
+    })
+  });
+
+  Object.defineProperty(episodes, 'past', {
+    value: episodes.published.slice(1)
+  });
+
+  Object.defineProperty(episodes, 'latest', {
+    value: episodes.published[0]
+  });
+
+  Object.defineProperty(episodes, 'upcoming', {
+    value: episodes.filter(function(episode) {
+      return !episode.published;
+    })[0]
+  });
 
   Polymer({
     is: 'episode-api',

@@ -1,0 +1,39 @@
+@import '../../styles/color';
+
+:host {
+  background: $lightblue;
+  color: #fff;
+  display: block;
+  font-size: 13px;
+  line-height: 20px;
+  padding: 10px 0;
+}
+
+section {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 800px;
+  padding-left: 50px;
+  position: relative;
+}
+
+h1,
+p {
+  margin: 0;
+  padding: 8px 12px;
+}
+
+h1 {
+  font-size: 14px;
+  border-bottom: 1px solid rgba(255,255,255,.2);
+}
+
+iron-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 30px;
+  width: 30px;
+  margin-right: 6px;
+}

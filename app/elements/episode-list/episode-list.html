@@ -11,7 +11,7 @@
           <h2>Latest Episodes</h2>
           <episode-synopsis
             details
-            episode="{{episodes.0}}">
+            episode="{{episodes.latest}}">
           </episode-synopsis>
         </div>
       </section>
@@ -19,7 +19,7 @@
       <section class="episode-list__past">
         <div>
           <h2>Past Episodes</h2>
-          <template id="test" is="dom-repeat" items="{{oldEpisodes}}">
+          <template id="test" is="dom-repeat" items="{{episodes.past}}">
             <episode-synopsis episode="{{item}}"></episode-synopsis>
           </template>
         </div>

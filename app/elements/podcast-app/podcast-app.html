@@ -2,6 +2,7 @@
 <link rel="import" href="../../elements/episode-api/episode-api.html">
 <link rel="import" href="../../elements/episode-entity/episode-entity.html">
 <link rel="import" href="../../elements/episode-list/episode-list.html">
+<link rel="import" href="../../elements/episode-upcoming/episode-upcoming.html">
 
 <dom-module id="podcast-app">
 
@@ -35,6 +36,8 @@
         </a>
       </nav>
     </header>
+
+    <episode-upcoming episode="{{episodes.upcoming}}"></episode-upcoming>
 
     <episode-list
       episodes="{{episodes}}"
