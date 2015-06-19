@@ -1,6 +1,9 @@
+#Polymer Podcast
+
 To get started, clone the repo, run `npm install`, and type `gulp
 serve`.
 
+##INSTALL
 * Step 1: clone the repo
 
 ```
@@ -24,4 +27,10 @@ $ gulp
 
 ```
 $ gulp serve
+```
+
+##DEPLOY
+```
+gulp serve:dist
+gsutil rsync -R dist gs://www.polymerpodcast.com
 ```
