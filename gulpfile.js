@@ -149,7 +149,10 @@ gulp.task('vulcanize', function () {
     .pipe($.vulcanize({
       dest: DEST_DIR,
       strip: true,
-      inline: true
+      inline: true,
+      inlineScripts: true,
+      inlineCss: true
+
     }))
     .pipe(gulp.dest(DEST_DIR))
     .pipe($.size({title: 'vulcanize'}));
@@ -199,7 +202,7 @@ gulp.task('default', ['clean'], function (cb) {
     ['copy', 'styles'],
     'elements',
     ['jshint', 'images', 'media', 'fonts', 'html'],
-    //'vulcanize',
+    'vulcanize',
     cb);
 });
 

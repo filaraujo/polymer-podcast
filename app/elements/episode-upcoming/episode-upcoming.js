@@ -4,10 +4,6 @@
 
     properties: {
       episode: Object
-    },
-
-    ready: function() {
-      console.log(this.episode);
     }
   });
 }());
