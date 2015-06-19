@@ -1,0 +1,120 @@
+@import '../../styles/color';
+
+:host {
+  background: $pink;
+  /* color: #fff; */
+  color: rgba(255,255,255, .625);
+  display: block;
+  overflow: auto;
+  padding-top: 40px;
+}
+
+p {
+  margin: 0;
+  padding: 30px 0;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 300;
+  margin-bottom: 10px;
+
+  span:first-child {
+    font-size: 50px;
+    float: right;
+    margin-left: 10px;
+  }
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 300;
+  margin: 20px 0 30px;
+  position: relative;
+
+
+  iron-icon {
+    height: 30px;
+    vertical-align: middle;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+}
+
+.episode-subscribe__section,
+.episode-subscribe__section-alternate,
+.episode-subscribe__section-alternate2 {
+  @media (max-width: 850px) {
+    padding: 0 30px;
+  }
+}
+
+.episode-subscribe__section-alternate {
+  background: $black;
+  color: rgba(255,255,255,.5);
+  border-top: 1px solid  rgba(0,0,0,.2);
+  overflow: auto;
+}
+
+.episode-subscribe__subscriber {
+  padding: 30px 0;
+  margin: 0;
+
+  & + .episode-subscribe__subscriber {
+    border-top: 1px solid  rgba(255, 255, 255, .2);
+  }
+
+  img {
+    vertical-align: middle;
+  }
+
+  a {
+    color: rgba(255,255,255,.5);
+    background: #333;
+    display: inline-block;
+    float: right;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 5px 10px;
+    text-decoration: none;
+
+    &:hover {
+      background: $pink;
+      color: $black;
+    }
+  }
+
+  a[href*="twitter"] img {
+    margin-right: 10px;
+  }
+}
+
+.episode-subscribe__section-alternate2 {
+  background: rgba(0,0,0,.1);
+  line-height: 32px;
+}
+
+
+
+.episode-subscribe__centered {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.episode-subscribe__close-btn {
+  color: #fff;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  &:hover {
+    color: $gray;
+  }
+}

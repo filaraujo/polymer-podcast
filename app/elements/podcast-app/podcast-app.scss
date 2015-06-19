@@ -73,13 +73,15 @@ nav {
   text-align: center;
 
   a,
-  span {
+  button {
+    background: transparent;
+    border: 0;
     border-bottom: 3px solid transparent;
     border-top: 3px solid transparent;
     box-sizing: border-box;
     color: #fff;
+    cursor: pointer;
     display: inline-block;
-    font-size: 13px;
     line-height: $nav-height;
     height: $nav-height;
     text-decoration: none;
@@ -115,7 +117,8 @@ nav {
   }
 }
 
-episode-entity {
+episode-entity,
+episode-subscribe {
   bottom: 0;
   left: 0;
   position: fixed;
@@ -128,7 +131,7 @@ episode-entity {
     opacity .3s,
     visibility 0s .3s;
 
-  &[is-visible] {
+  &[visible] {
     opacity: 1;
     transition:
       opacity .3s,

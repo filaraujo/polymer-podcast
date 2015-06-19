@@ -1,0 +1,62 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+  <dom-module id="episode-subscribe">
+
+    <link rel="import" type="css" href="episode-subscribe.css">
+
+    <template>
+      <button class="episode-subscribe__close-btn" on-click="onClose">
+        <iron-icon icon="icons:close"></iron-icon>
+      </button>
+
+      <section class="episode-subscribe__section">
+        <div class="episode-subscribe__centered">
+          <h2>Want to Listen?</h2>
+          <p>You can listen and subscribe to the Polymer Podcast below, or search for us on your favorite podcast app.</p>
+        </div>
+      </section>
+
+      <section class="episode-subscribe__section-alternate">
+        <div class="episode-subscribe__centered">
+          <div class="episode-subscribe__subscriber">
+            <img src="/images/stitcher.png" alt="Stitcher">
+            <a
+              href="http://www.stitcher.com/podcast/polymer-podcast/"
+              on-click="onSubscribe"
+              title="Stitcher"
+              target="_blank">
+              subscribe
+            </a>
+          </div>
+
+          <div class="episode-subscribe__subscriber">
+            <img src="/images/itunes.png" alt="iTunes">
+            <a
+              href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewPodcast?id=999210514&at="
+              title="iTunes"
+              on-click="onSubscribe"
+              target="_blank">
+              subscribe
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="episode-subscribe__section-alternate2">
+        <div class="episode-subscribe__centered">
+          <div class="episode-subscribe__subscriber">
+            You can also follow us on twitter
+            <a
+              href="https://twitter.com/polymerpodcast"
+              title="Twitter"
+              on-click="onSubscribe"
+              target="_blank">
+              <img src="/images/twitter.png" alt="Twitter">follow
+            </a>
+          </div>
+        </div>
+      </section>
+    </template>
+
+    <script src="episode-subscribe.js"></script>
+</dom-module>

@@ -17,23 +17,28 @@
         <iron-icon icon="podcast:logo"></iron-icon>
         Polymer <span>Podcast</span>
       </h1>
+
       <nav>
-        <span active>
+        <button active>
           <iron-icon icon="device:graphic-eq"></iron-icon>
           Episodes
-        </span>
+        </button>
         <!-- <a href="#">
           <iron-icon icon="social:people"></iron-icon>
           The Hosts
-          <span>(coming soon)</span>
+          <button>(coming soon)</button>
         </a> -->
         <!-- https://itunes.apple.com/us/podcast/polymer-podcast/id999210514?mt=2 -->
-        <a
-          href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewPodcast?id=999210514&at="
-          target="_blank">
+        <button
+          on-click="showSubscribe">
           <iron-icon icon="av:playlist-add"></iron-icon>
           Subscribe
-        </a>
+        </button>
+        <!-- <a
+          href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewPodcast?id=999210514&at="
+          target="_blank">
+          Subscribe
+        </a> -->
       </nav>
     </header>
 
@@ -47,9 +52,12 @@
     <episode-entity
       id="entity"
       episode="{{episode}}"
-      is-visible$="{{visible}}"
       on-episode-entity--close="unsetEpisode">
     </episode-entity>
+
+    <episode-subscribe
+      id="subscribe">
+    </episode-subscribe>
 
   </template>
 

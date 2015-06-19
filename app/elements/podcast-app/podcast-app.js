@@ -8,13 +8,17 @@
 
     setEpisode: function(e) {
       this.episode = e.detail.episode;
-      this.visible = true;
+      this.$.entity.visible = true;
+      // this.visible = true;
       window.ga('send', 'pageview', 'entity');
     },
 
     unsetEpisode: function() {
-      this.visible = false;
       window.ga('send', 'pageview', 'home');
+    },
+
+    showSubscribe: function() {
+      this.$.subscribe.visible = true;
     }
   });
 }());
