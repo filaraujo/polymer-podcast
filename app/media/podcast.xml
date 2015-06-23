@@ -8,7 +8,7 @@
     <language>en-us</language>
     <copyright>Polymer Podcast 2015</copyright>
     <atom:link href="http://www.polymerpodcast.com/media/podcast.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Wed, 13 Aug 2014 15:47:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2015 12:46:28 +0000</lastBuildDate>
     <itunes:author>Polymer Podcast</itunes:author>
     <itunes:summary>A podcast about Polymer.js</itunes:summary>
     <itunes:owner>
@@ -18,6 +18,17 @@
     <itunes:explicit>No</itunes:explicit>
     <itunes:image href="http://www.polymerpodcast.com/media/album.jpg"/>
     <itunes:category text="Technology"> </itunes:category>
+    <item>
+      <title>Testing Polymer</title>
+      <link>http://www.polymerpodcast.com/index.html</link>
+      <pubDate>Tue, 23 Jun 2015 12:46:28 +0000</pubDate>
+      <description>We talk to Ian MacLeod, core architect behind web-component-tester about testing with Polymer. We also delve into WCT's rich history and tackle some of the harder aspects of testing.</description>
+      <enclosure url="http://www.polymerpodcast.com/media/testing-polymer-final.mp3" length="53609847" type="audio/mpeg"/>
+      <guid isPermaLink="false">http://www.polymerpodcast.com/media/testing-polymer-final.mp3</guid>
+      <itunes:duration>48:50</itunes:duration>
+      <itunes:image href="http://www.polymerpodcast.com/media/album.jpg"/>
+      <itunes:summary>We talk to Ian MacLeod, core architect behind web-component-tester about testing with Polymer. We also delve into WCT's rich history and tackle some of the harder aspects of testing.</itunes:summary>
+    </item>
     <item>
       <title>Polymer I/O</title>
       <link>http://www.polymerpodcast.com/index.html</link>
@@ -40,16 +51,5 @@
       <itunes:image href="http://www.polymerpodcast.com/media/album.jpg"/>
       <itunes:summary>In this episode, we talk with Rob Dodson, developer evangelist for the Polymer Project, about the history of Polymer. We also get to to hear Rob's thoughts on the future of the web and the role Polymer will play in it.</itunes:summary>
     </item>
-      <item>
-        <title>Testing Polymer</title>
-        <link>http://www.polymerpodcast.com/index.html</link>
-        <pubDate>June, 23 May 2015 02:00:00 GMT</pubDate>
-        <description>We talk to Ian MacLeod, core architect behind web-component-tester about testing with Polymer. We also delve into WCT's rich history and tackle some of the harder aspects of testing.</description>
-        <enclosure url="http://www.polymerpodcast.com/media/testing-polymer-final.mp3" length="53609847" type="audio/mpeg"/>
-        <guid isPermaLink="false">http://www.polymerpodcast.com/media/polymer-io-final.mp3</guid>
-        <itunes:duration>48:50</itunes:duration>
-        <itunes:image href="http://www.polymerpodcast.com/media/album.jpg"/>
-        <itunes:summary>We talk to Ian MacLeod, core architect behind web-component-tester about testing with Polymer. We also delve into WCT's rich history and tackle some of the harder aspects of testing.</itunes:summary>
-      </item>
   </channel>
 </rss>
