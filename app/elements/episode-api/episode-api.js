@@ -2,8 +2,75 @@
   // make this return latest
   var episodes = [
     {
-      name: 'Polymer I/O',
-      synopsis: 'We talk to Ian MacLeod, core architect behind web-component-tester about testing Polymer.'
+      duration: '37 minutes 13 seconds',
+      name: 'Testing Polymer',
+      panel: [
+        {name: 'Filipe Araujo', image: 'https://pbs.twimg.com/profile_images/478931548872249345/TEedVwOK_bigger.jpeg', twitter: 'filipearaujo', twitterUrl: 'https://twitter.com/filipearaujo'},
+        {name: 'Jonathan Belcher', image: 'https://pbs.twimg.com/profile_images/529291762649403392/Pt7LuHxE_bigger.jpeg', twitter: 'belcherj', twitterUrl: 'https://twitter.com/belcherj'},
+        {name: 'William Jeffries', image: 'https://pbs.twimg.com/profile_images/464444006017937408/aU8lcuBL_bigger.jpeg', twitter: 'williamcodes', twitterUrl: 'https://twitter.com/williamcodes'},
+        {name: 'Dane O\'Conner', image: 'https://pbs.twimg.com/profile_images/378800000832830634/e0021647f2f55fcfabd70f506b1852e6_bigger.png', twitter: 'thedeeno', twitterUrl: 'https://twitter.com/thedeeno'},
+        {name: 'Ian MacLeod', isGuest: true, image: 'https://pbs.twimg.com/profile_images/2751204129/58c6513c5f18df47247b81b2f94ae912_bigger.png', twitter: 'nevir', twitterUrl: 'https://twitter.com/nevir'}
+      ],
+      published: '06/22/2015',
+      synopsis: 'We talk to Ian MacLeod, core architect behind web-component-tester about testing with Polymer. We also delve into WCT\'s rich history and tackle some of the harder aspects of testing.',
+      topics: [
+        {time: '1:05', topic: 'Ian Introduction'},
+        {time: '2:13', topic: 'Code Management'},
+        {time: '3:15', topic: 'Team breakdown'},
+        {time: '4:00', topic: 'Ian\'s History'},
+        {time: '5:00', topic: 'Web Component Tester', links: [
+          {link: 'github', url: 'https://github.com/Polymer/web-component-tester'}
+        ]},
+        {time: '8:10', topic: 'Saucelabs Integration', links: [
+          {link: 'saucelabs', url: 'https://saucelabs.com/'}
+        ]},
+        {time: '9:01', topic: 'WebDriver and Shadow DOM'},
+        {time: '9:45', topic: 'Integration Testing'},
+        {time: '11:05', topic: 'Testing Driven Development'},
+        {time: '11:57', topic: 'Roadmap for WCT'},
+        {time: '13:35', topic: 'WCT Overview', links: [
+          {link: 'express', url: 'http://expressjs.com/'},
+          {link: 'mochajs', url: 'http://mochajs.org/'},
+          {link: 'chaijs', url: 'http://chaijs.com/'},
+          {link: 'sinonjs', url: 'http://sinonjs.org/'}
+        ]},
+        {time: '15:26', topic: 'Code Coverage'},
+        {time: '16:50', topic: 'Build Tooling Integration', links: [
+          {link: 'firebase', url: 'https://www.firebase.com/'}
+        ]},
+        {time: '18:04', topic: 'Testing for 1.0 Migration'},
+        {time: '20:45', topic: 'Declarative vs Imperative Tests'},
+        {time: '22:30', topic: 'Where to start with WCT'},
+        {time: '25:30', topic: 'Hydrolisis', links: [
+          {link: 'hydrolysis', url: 'https://github.com/Polymer/hydrolysis'}
+        ]},
+        {time: '26:18', topic: 'Ecosystem Tools'},
+        {time: '28:13', topic: 'Code Review'},
+        {time: '30:52', topic: 'Dane\'s Picks', links: [
+          {link: 'vim-fugitive', url: 'https://github.com/tpope/vim-fugitive'},
+          {link: 'vimcasts', url: 'http://vimcasts.org/episodes/fugitive-vim---a-complement-to-command-line-git/'}
+        ]},
+        {time: '31:38', topic: 'William\'s Picks', links: [
+          {link: 'twitch.tv', url: 'http://www.twitch.tv/'},
+          {link: 'All the Little Things', url: 'https://www.youtube.com/watch?v=8bZh5LMaSmE'},
+          {link: 'Nothing is Something', url: 'https://www.youtube.com/watch?v=OMPfEXIlTVE'}
+        ]},
+        {time: '32:51', topic: 'Fil\'s Picks', links: [
+          {link: 'polyserve', url: 'https://github.com/polymerlabs/polyserve'},
+          {link: 'Daredevil', url: 'http://www.netflix.com/title/80018294'},
+          {link: 'Polymer Slack', url: 'https://polymer-slack.herokuapp.com/'}
+        ]},
+        {time: '33:37', topic: 'JB\'s Picks', links: [
+          {link: 'wave toolbar', url: 'https://wave.webaim.org/toolbar/'}
+        ]},
+        {time: '34:25', topic: 'Ian\'s Picks', links: [
+          {link: 'service workers', url: 'http://www.w3.org/TR/service-workers/'},
+          {link: 'Spartan', url: 'http://windows.microsoft.com/en-us/windows-10/what-is-project-spartan'}
+        ]},
+        {time: '36:38', topic: 'Purple Tentacle', links: [
+          {link: 'Day of the Tentacle', url: 'https://en.wikipedia.org/wiki/Day_of_the_Tentacle'}
+        ]}
+      ]
     },
     {
       duration: '48 minutes 50 seconds',

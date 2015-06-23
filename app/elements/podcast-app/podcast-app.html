@@ -42,7 +42,9 @@
       </nav>
     </header>
 
-    <episode-upcoming episode="{{episodes.upcoming}}"></episode-upcoming>
+    <template is="dom-if" if="{{episodes.upcoming}}">
+      <episode-upcoming episode="{{episodes.upcoming}}"></episode-upcoming>
+    </template>
 
     <episode-list
       episodes="{{episodes}}"
