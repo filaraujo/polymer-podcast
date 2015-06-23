@@ -4,6 +4,7 @@
     {
       duration: '37 minutes 13 seconds',
       name: 'Testing Polymer',
+      number: '03',
       panel: [
         {name: 'Filipe Araujo', image: 'https://pbs.twimg.com/profile_images/478931548872249345/TEedVwOK_bigger.jpeg', twitter: 'filipearaujo', twitterUrl: 'https://twitter.com/filipearaujo'},
         {name: 'Jonathan Belcher', image: 'https://pbs.twimg.com/profile_images/529291762649403392/Pt7LuHxE_bigger.jpeg', twitter: 'belcherj', twitterUrl: 'https://twitter.com/belcherj'},
