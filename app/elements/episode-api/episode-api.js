@@ -2,6 +2,11 @@
   // make this return latest
   var episodes = [
     {
+      name: 'Polymer 1.0 Review',
+      number: '04',
+      synopsis: 'After one month some intense rewrites and migration, we sit down and discuss the road to Polymer 1.0'
+    },
+    {
       duration: '37 minutes 13 seconds',
       name: 'Testing Polymer',
       number: '03',
