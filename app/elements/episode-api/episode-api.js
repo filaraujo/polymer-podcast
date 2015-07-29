@@ -2,9 +2,20 @@
   // make this return latest
   var episodes = [
     {
+      duration: '56 minutes 1 second',
       name: 'Polymer 1.0 Review',
       number: '04',
-      synopsis: 'After one month some intense rewrites and migration, we sit down and discuss the road to Polymer 1.0'
+      panel: [
+        {name: 'Filipe Araujo', image: 'https://pbs.twimg.com/profile_images/478931548872249345/TEedVwOK_bigger.jpeg', twitter: 'filipearaujo', twitterUrl: 'https://twitter.com/filipearaujo'},
+        {name: 'Jonathan Belcher', image: 'https://pbs.twimg.com/profile_images/619942884607938560/h5lEiJgr_bigger.jpg', twitter: 'belcherj', twitterUrl: 'https://twitter.com/belcherj'},
+        {name: 'William Jeffries', image: 'https://pbs.twimg.com/profile_images/464444006017937408/aU8lcuBL_bigger.jpeg', twitter: 'williamcodes', twitterUrl: 'https://twitter.com/williamcodes'},
+        {name: 'Dane O\'Conner', image: 'https://pbs.twimg.com/profile_images/378800000832830634/e0021647f2f55fcfabd70f506b1852e6_bigger.png', twitter: 'thedeeno', twitterUrl: 'https://twitter.com/thedeeno'}
+      ],
+      published: '07/28/2015',
+      synopsis: 'After one month of some intense rewrites and migration, we sit down and discuss the road to Polymer 1.0',
+      topics: [
+        {topic: 'Pending'}
+      ]
     },
     {
       duration: '37 minutes 13 seconds',
@@ -12,7 +23,7 @@
       number: '03',
       panel: [
         {name: 'Filipe Araujo', image: 'https://pbs.twimg.com/profile_images/478931548872249345/TEedVwOK_bigger.jpeg', twitter: 'filipearaujo', twitterUrl: 'https://twitter.com/filipearaujo'},
-        {name: 'Jonathan Belcher', image: 'https://pbs.twimg.com/profile_images/529291762649403392/Pt7LuHxE_bigger.jpeg', twitter: 'belcherj', twitterUrl: 'https://twitter.com/belcherj'},
+        {name: 'Jonathan Belcher', image: 'https://pbs.twimg.com/profile_images/619942884607938560/h5lEiJgr_bigger.jpg', twitter: 'belcherj', twitterUrl: 'https://twitter.com/belcherj'},
         {name: 'William Jeffries', image: 'https://pbs.twimg.com/profile_images/464444006017937408/aU8lcuBL_bigger.jpeg', twitter: 'williamcodes', twitterUrl: 'https://twitter.com/williamcodes'},
         {name: 'Dane O\'Conner', image: 'https://pbs.twimg.com/profile_images/378800000832830634/e0021647f2f55fcfabd70f506b1852e6_bigger.png', twitter: 'thedeeno', twitterUrl: 'https://twitter.com/thedeeno'},
         {name: 'Ian MacLeod', isGuest: true, image: 'https://pbs.twimg.com/profile_images/2751204129/58c6513c5f18df47247b81b2f94ae912_bigger.png', twitter: 'nevir', twitterUrl: 'https://twitter.com/nevir'}
@@ -84,7 +95,7 @@
       name: 'Polymer I/O',
       panel: [
         {name: 'Filipe Araujo', image: 'https://pbs.twimg.com/profile_images/478931548872249345/TEedVwOK_bigger.jpeg', twitter: 'filipearaujo', twitterUrl: 'https://twitter.com/filipearaujo'},
-        {name: 'Jonathan Belcher', image: 'https://pbs.twimg.com/profile_images/529291762649403392/Pt7LuHxE_bigger.jpeg', twitter: 'belcherj', twitterUrl: 'https://twitter.com/belcherj'},
+        {name: 'Jonathan Belcher', image: 'https://pbs.twimg.com/profile_images/619942884607938560/h5lEiJgr_bigger.jpg', twitter: 'belcherj', twitterUrl: 'https://twitter.com/belcherj'},
         {name: 'William Jeffries', image: 'https://pbs.twimg.com/profile_images/464444006017937408/aU8lcuBL_bigger.jpeg', twitter: 'williamcodes', twitterUrl: 'https://twitter.com/williamcodes'},
         {name: 'Dane O\'Conner', image: 'https://pbs.twimg.com/profile_images/378800000832830634/e0021647f2f55fcfabd70f506b1852e6_bigger.png', twitter: 'thedeeno', twitterUrl: 'https://twitter.com/thedeeno'},
         {name: 'Taylor Savage', isGuest: true, image: 'https://pbs.twimg.com/profile_images/547545280841670657/ZtHyM2rc_bigger.jpeg', twitter: 'taylorthesavage', twitterUrl: 'https://twitter.com/taylorthesavage'}
@@ -147,7 +158,7 @@
       name: 'History of Polymer',
       panel: [
         {name: 'Filipe Araujo', image: 'https://pbs.twimg.com/profile_images/478931548872249345/TEedVwOK_bigger.jpeg', twitter: 'filipearaujo'},
-        {name: 'Jonathan Belcher', image: 'https://pbs.twimg.com/profile_images/529291762649403392/Pt7LuHxE_bigger.jpeg', twitter: 'belcherj'},
+        {name: 'Jonathan Belcher', image: 'https://pbs.twimg.com/profile_images/619942884607938560/h5lEiJgr_bigger.jpg', twitter: 'belcherj'},
         {name: 'William Jeffries', image: 'https://pbs.twimg.com/profile_images/464444006017937408/aU8lcuBL_bigger.jpeg', twitter: 'williamcodes'},
         {name: 'Dane O\'Conner', image: 'https://pbs.twimg.com/profile_images/378800000832830634/e0021647f2f55fcfabd70f506b1852e6_bigger.png', twitter: 'thedeeno'},
         {name: 'Rob Dodson', isGuest: true, image: 'https://pbs.twimg.com/profile_images/378800000232696683/736a167223708fbbb2e910da863541cc_bigger.jpeg', twitter: 'rob_dodson'}
