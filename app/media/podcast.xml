@@ -18,6 +18,8 @@
     <itunes:explicit>No</itunes:explicit>
     <itunes:image href="http://www.polymerpodcast.com/media/album.jpg"/>
     <itunes:category text="Technology"> </itunes:category>
+    <sy:updatePeriod>hourly</sy:updatePeriod>
+    <sy:updateFrequency>1</sy:updateFrequency>
     <item>
       <title>04: Polymer 1.0 Review</title>
       <link>http://www.polymerpodcast.com/index.html</link>
