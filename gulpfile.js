@@ -24,7 +24,7 @@ var AUTOPREFIXER_BROWSERS = [
   'bb >= 10'
 ];
 
-var styleTask = function (stylesPath, srcs) {
+var styleTask = function(stylesPath, srcs) {
   return gulp.src(srcs.map(function(src) {
       return path.join('app', stylesPath, src);
     }))
@@ -44,16 +44,16 @@ var styleTask = function (stylesPath, srcs) {
 };
 
 // Compile and Automatically Prefix Stylesheets
-gulp.task('styles', function () {
+gulp.task('styles', function() {
   return styleTask('styles', ['**/*.css', '*.scss']);
 });
 
-gulp.task('elements', function () {
+gulp.task('elements', function() {
   return styleTask('elements', ['**/*.css', '**/*.scss']);
 });
 
 // Lint JavaScript
-gulp.task('jshint', function () {
+gulp.task('jshint', function() {
   return gulp.src([
       'app/scripts/**/*.js',
       'app/elements/**/*.js',
@@ -67,7 +67,7 @@ gulp.task('jshint', function () {
 });
 
 // Optimize Images
-gulp.task('images', function () {
+gulp.task('images', function() {
   return gulp.src('app/images/**/*')
     .pipe($.cache($.imagemin({
       progressive: true,
@@ -78,14 +78,14 @@ gulp.task('images', function () {
 });
 
 // Media
-gulp.task('media', function () {
+gulp.task('media', function() {
   return gulp.src('app/media/**/*')
     .pipe(gulp.dest('dist/media'))
     .pipe($.size({title: 'media'}));
 });
 
 // Copy All Files At The Root Level (app)
-gulp.task('copy', function () {
+gulp.task('copy', function() {
   var app = gulp.src([
     'app/*',
     '!app/test',
@@ -109,14 +109,14 @@ gulp.task('copy', function () {
 });
 
 // Copy Web Fonts To Dist
-gulp.task('fonts', function () {
+gulp.task('fonts', function() {
   return gulp.src(['app/fonts/**'])
     .pipe(gulp.dest('dist/fonts'))
     .pipe($.size({title: 'fonts'}));
 });
 
 // Scan Your HTML For Assets & Optimize Them
-gulp.task('html', function () {
+gulp.task('html', function() {
   var assets = $.useref.assets({searchPath: ['.tmp', 'app', 'dist']});
 
   return gulp.src(['app/**/*.html', '!app/{elements,test}/**/*.html'])
@@ -142,7 +142,7 @@ gulp.task('html', function () {
 });
 
 // Vulcanize imports
-gulp.task('vulcanize', function () {
+gulp.task('vulcanize', function() {
   var DEST_DIR = 'dist/elements';
 
   return gulp.src('dist/elements/elements.vulcanized.html')
@@ -162,7 +162,7 @@ gulp.task('vulcanize', function () {
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
 // Watch Files For Changes & Reload
-gulp.task('serve', ['styles', 'elements'], function () {
+gulp.task('serve', ['styles', 'elements'], function() {
   browserSync({
     notify: false,
     // Run as an https by uncommenting 'https: true'
@@ -185,7 +185,7 @@ gulp.task('serve', ['styles', 'elements'], function () {
 });
 
 // Build and serve the output from the dist build
-gulp.task('serve:dist', ['default'], function () {
+gulp.task('serve:dist', ['default'], function() {
   browserSync({
     notify: false,
     // Run as an https by uncommenting 'https: true'
@@ -197,7 +197,7 @@ gulp.task('serve:dist', ['default'], function () {
 });
 
 // Build Production Files, the Default Task
-gulp.task('default', ['clean'], function (cb) {
+gulp.task('default', ['clean'], function(cb) {
   runSequence(
     ['copy', 'styles'],
     'elements',
@@ -208,7 +208,7 @@ gulp.task('default', ['clean'], function (cb) {
 
 // Run PageSpeed Insights
 // Update `url` below to the public URL for your site
-gulp.task('pagespeed', function (cb) {
+gulp.task('pagespeed', function(cb) {
   // Update the below URL to the public URL of your site
   pagespeed.output('example.com', {
     strategy: 'mobile',
@@ -217,7 +217,6 @@ gulp.task('pagespeed', function (cb) {
     // key: 'YOUR_API_KEY'
   }, cb);
 });
-
 
 // Load tasks for web-component-tester
 // Adds tasks for `gulp test:local` and `gulp test:remote`
