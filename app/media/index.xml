@@ -18,6 +18,7 @@
     <itunes:explicit>No</itunes:explicit>
     <itunes:image href="http://www.polymerpodcast.com/media/album.jpg"/>
     <itunes:category text="Technology"> </itunes:category>
+    <itunes:block></itunes:block>
     <item>
       <title>Polymer 1.0 Review</title>
       <link>http://www.polymerpodcast.com/index.html</link>
