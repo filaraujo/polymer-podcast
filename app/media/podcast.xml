@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/">
   <channel>
     <title>Polymer Podcast</title>
     <link>http://www.polymerpodcast.com</link>
@@ -8,12 +8,12 @@
     <language>en-us</language>
     <copyright>Polymer Podcast 2015</copyright>
     <atom:link href="http://www.polymerpodcast.com/media/podcast.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Tue, 23 Jun 2015 12:46:28 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jul 2015 19:00:00 +0000</lastBuildDate>
     <itunes:author>Polymer Podcast</itunes:author>
     <itunes:summary>A podcast about Polymer.js</itunes:summary>
     <itunes:owner>
       <itunes:name>Polymer Podcast</itunes:name>
-      <itunes:email>wm.jeffries@gmail.com</itunes:email>
+      <itunes:email>polymerpodcast@gmail.com</itunes:email>
     </itunes:owner>
     <itunes:explicit>No</itunes:explicit>
     <itunes:image href="http://www.polymerpodcast.com/media/album.jpg"/>
@@ -23,7 +23,7 @@
     <item>
       <title>04: Polymer 1.0 Review</title>
       <link>http://www.polymerpodcast.com/index.html</link>
-      <pubDate>Tue, 23 Jun 2015 12:46:28 +0000</pubDate>
+      <pubDate>Tue, 28 Jul 2015 19:00:00 +0000</pubDate>
       <description>After one month of some intense rewrites and migration, we sit down and discuss the road to Polymer 1.0</description>
       <enclosure url="http://www.polymerpodcast.com/media/polymer-1-review-final.mp3" length="80696859" type="audio/mpeg"/>
       <guid isPermaLink="false">http://www.polymerpodcast.com/media/polymer-1-review-final.mp3</guid>
