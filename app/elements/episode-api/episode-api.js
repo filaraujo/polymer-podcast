@@ -209,7 +209,7 @@
           {link: 'audible', url: 'http://www.audible.com/'}
         ]},
         {time: '1:04:27', topic: 'Rob\'s Picks', links:[
-          {link: 'manhatten projects', url: 'https://imagecomics.com/comics/series/the-manhattan-projects'},
+          {link: 'manhattan projects', url: 'https://imagecomics.com/comics/series/the-manhattan-projects'},
           {link: 'adventure zone', url: 'http://www.maximumfun.org/shows/adventure-zone'}
         ]},
         {time: '1:06:16', topic: 'Support & Sponsors', links: [
