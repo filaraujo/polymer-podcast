@@ -81,6 +81,22 @@
           </div>
         </div>
       </section>
+
+      <section class="episode-entity__section-alternate2">
+        <div class="episode-entity__centered">
+          <h3>
+            <iron-icon icon="device:widgets"></iron-icon>
+            Sponsors
+          </h3>
+          <div class="episode-entity__sponsors">
+            <template is="dom-repeat" items="{{episode.sponsors}}">
+              <a href="{{item.url}}" class="episode-entity__sponsor">
+                <span>{{item.name}}</span>
+              </a>
+            </template>
+          </div>
+        </div>
+      </section>
     </template>
 
     <script src="episode-entity.js"></script>

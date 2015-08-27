@@ -7,11 +7,14 @@
       number: '04',
       panel: [
         {name: 'Filipe Araujo', image: 'https://pbs.twimg.com/profile_images/478931548872249345/TEedVwOK_bigger.jpeg', twitter: 'filipearaujo', twitterUrl: 'https://twitter.com/filipearaujo'},
-        {name: 'Jonathan Belcher', image: 'https://pbs.twimg.com/profile_images/619942884607938560/h5lEiJgr_bigger.jpg', twitter: 'belcherj', twitterUrl: 'https://twitter.com/belcherj'},
+        {name: 'Jonathan Belcher', image: 'https://pbs.twimg.com/profile_images/631519863681343488/DBLcKZ_F_bigger.jpg', twitter: 'belcherj', twitterUrl: 'https://twitter.com/belcherj'},
         {name: 'William Jeffries', image: 'https://pbs.twimg.com/profile_images/464444006017937408/aU8lcuBL_bigger.jpeg', twitter: 'williamcodes', twitterUrl: 'https://twitter.com/williamcodes'},
         {name: 'Dane O\'Conner', image: 'https://pbs.twimg.com/profile_images/378800000832830634/e0021647f2f55fcfabd70f506b1852e6_bigger.png', twitter: 'thedeeno', twitterUrl: 'https://twitter.com/thedeeno'}
       ],
       published: '07/28/2015',
+      sponsors: [
+        {name: 'SUNGARD', url: 'https://www.sungard.com/'}
+      ],
       synopsis: 'After one month of some intense rewrites and migration, we sit down and discuss the road to Polymer 1.0',
       topics: [
         {topic: 'Pending'}
@@ -23,12 +26,15 @@
       number: '03',
       panel: [
         {name: 'Filipe Araujo', image: 'https://pbs.twimg.com/profile_images/478931548872249345/TEedVwOK_bigger.jpeg', twitter: 'filipearaujo', twitterUrl: 'https://twitter.com/filipearaujo'},
-        {name: 'Jonathan Belcher', image: 'https://pbs.twimg.com/profile_images/619942884607938560/h5lEiJgr_bigger.jpg', twitter: 'belcherj', twitterUrl: 'https://twitter.com/belcherj'},
+        {name: 'Jonathan Belcher', image: 'https://pbs.twimg.com/profile_images/631519863681343488/DBLcKZ_F_bigger.jpg', twitter: 'belcherj', twitterUrl: 'https://twitter.com/belcherj'},
         {name: 'William Jeffries', image: 'https://pbs.twimg.com/profile_images/464444006017937408/aU8lcuBL_bigger.jpeg', twitter: 'williamcodes', twitterUrl: 'https://twitter.com/williamcodes'},
         {name: 'Dane O\'Conner', image: 'https://pbs.twimg.com/profile_images/378800000832830634/e0021647f2f55fcfabd70f506b1852e6_bigger.png', twitter: 'thedeeno', twitterUrl: 'https://twitter.com/thedeeno'},
         {name: 'Ian MacLeod', isGuest: true, image: 'https://pbs.twimg.com/profile_images/2751204129/58c6513c5f18df47247b81b2f94ae912_bigger.png', twitter: 'nevir', twitterUrl: 'https://twitter.com/nevir'}
       ],
       published: '06/22/2015',
+      sponsors: [
+        {name: 'SUNGARD', url: 'https://www.sungard.com/'}
+      ],
       synopsis: 'We talk to Ian MacLeod, core architect behind web-component-tester about testing with Polymer. We also delve into WCT\'s rich history and tackle some of the harder aspects of testing.',
       topics: [
         {time: '1:05', topic: 'Ian Introduction'},
@@ -95,12 +101,15 @@
       name: 'Polymer I/O',
       panel: [
         {name: 'Filipe Araujo', image: 'https://pbs.twimg.com/profile_images/478931548872249345/TEedVwOK_bigger.jpeg', twitter: 'filipearaujo', twitterUrl: 'https://twitter.com/filipearaujo'},
-        {name: 'Jonathan Belcher', image: 'https://pbs.twimg.com/profile_images/619942884607938560/h5lEiJgr_bigger.jpg', twitter: 'belcherj', twitterUrl: 'https://twitter.com/belcherj'},
+        {name: 'Jonathan Belcher', image: 'https://pbs.twimg.com/profile_images/631519863681343488/DBLcKZ_F_bigger.jpg', twitter: 'belcherj', twitterUrl: 'https://twitter.com/belcherj'},
         {name: 'William Jeffries', image: 'https://pbs.twimg.com/profile_images/464444006017937408/aU8lcuBL_bigger.jpeg', twitter: 'williamcodes', twitterUrl: 'https://twitter.com/williamcodes'},
         {name: 'Dane O\'Conner', image: 'https://pbs.twimg.com/profile_images/378800000832830634/e0021647f2f55fcfabd70f506b1852e6_bigger.png', twitter: 'thedeeno', twitterUrl: 'https://twitter.com/thedeeno'},
         {name: 'Taylor Savage', isGuest: true, image: 'https://pbs.twimg.com/profile_images/547545280841670657/ZtHyM2rc_bigger.jpeg', twitter: 'taylorthesavage', twitterUrl: 'https://twitter.com/taylorthesavage'}
       ],
       published: '05/29/2015',
+      sponsors: [
+        {name: 'SUNGARD', url: 'https://www.sungard.com/'}
+      ],
       synopsis: 'In this episode, we talk with Taylor Savage, product manager for the Polymer Project, about the announcements at Google I/O and Polymer 1.0. We also learn about the Polymer starter kit, the new web component catalogs, and how the polymer team gets things done!',
       topics: [
         {time: '0:45', topic: 'Taylor Savage Introduction'},
@@ -158,12 +167,15 @@
       name: 'History of Polymer',
       panel: [
         {name: 'Filipe Araujo', image: 'https://pbs.twimg.com/profile_images/478931548872249345/TEedVwOK_bigger.jpeg', twitter: 'filipearaujo'},
-        {name: 'Jonathan Belcher', image: 'https://pbs.twimg.com/profile_images/619942884607938560/h5lEiJgr_bigger.jpg', twitter: 'belcherj'},
+        {name: 'Jonathan Belcher', image: 'https://pbs.twimg.com/profile_images/631519863681343488/DBLcKZ_F_bigger.jpg', twitter: 'belcherj'},
         {name: 'William Jeffries', image: 'https://pbs.twimg.com/profile_images/464444006017937408/aU8lcuBL_bigger.jpeg', twitter: 'williamcodes'},
         {name: 'Dane O\'Conner', image: 'https://pbs.twimg.com/profile_images/378800000832830634/e0021647f2f55fcfabd70f506b1852e6_bigger.png', twitter: 'thedeeno'},
         {name: 'Rob Dodson', isGuest: true, image: 'https://pbs.twimg.com/profile_images/378800000232696683/736a167223708fbbb2e910da863541cc_bigger.jpeg', twitter: 'rob_dodson'}
       ],
       published: '05/28/2015',
+      sponsors: [
+        {name: 'SUNGARD', url: 'https://www.sungard.com/'}
+      ],
       synopsis: 'In this episode, we talk with Rob Dodson, developer evangelist for the Polymer Project, about the history of Polymer. We also get to to hear Rob\'s thoughts on the future of the web and the role Polymer will play in it.',
       topics: [
         {time: '0:54', topic: 'Rob Dodson introduction'},
@@ -195,20 +207,20 @@
         {time: '55:19', topic: 'Migrating to 1.0'},
         {time: '57:45', topic: 'Shady DOM'},
         {time: '58:17', topic: '1.0 Release Date'},
-        {time: '1:02:08', topic: 'JB\'s Picks', links:[
+        {time: '1:02:08', topic: 'JB\'s Picks', links: [
           {link: 'modern.ie', url: 'http://dev.modern.ie/'},
           {link: 'vinylmeplease', url: 'http://vinylmeplease.com/'},
         ]},
-        {time: '1:02:33', topic: 'Fil\'s Picks', links:[
+        {time: '1:02:33', topic: 'Fil\'s Picks', links: [
           {link: 'lazyweb', url: 'https://www.youtube.com/playlist?list=PLOU2XLYxmsIIdQz8Hih4AyP_ZCn_mzsN4'},
           {link: 'polycasts', url: 'https://www.youtube.com/playlist?list=PLOU2XLYxmsII5c3Mgw6fNYCzaWrsM3sMN'},
           {link: 'hololens', url: 'https://www.microsoft.com/microsoft-hololens/en-us'}
         ]},
-        {time: '1:03:07', topic: 'William\'s Picks', links:[
+        {time: '1:03:07', topic: 'William\'s Picks', links: [
           {link: 'codeschool', url: 'https://www.codeschool.com/'},
           {link: 'audible', url: 'http://www.audible.com/'}
         ]},
-        {time: '1:04:27', topic: 'Rob\'s Picks', links:[
+        {time: '1:04:27', topic: 'Rob\'s Picks', links: [
           {link: 'manhattan projects', url: 'https://imagecomics.com/comics/series/the-manhattan-projects'},
           {link: 'adventure zone', url: 'http://www.maximumfun.org/shows/adventure-zone'}
         ]},
