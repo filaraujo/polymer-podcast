@@ -1,5 +1,5 @@
 (function() {
-  Polymer({
+  window.Polymer({
     is: 'episode-entity',
 
     properties: {

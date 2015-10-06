@@ -8,7 +8,7 @@
     <language>en-us</language>
     <copyright>Polymer Podcast 2015</copyright>
     <atom:link href="http://www.polymerpodcast.com/media/podcast.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Tue, 28 Jul 2015 19:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2015 19:00:00 +0000</lastBuildDate>
     <itunes:author>Polymer Podcast</itunes:author>
     <itunes:summary>A podcast about Polymer.js</itunes:summary>
     <itunes:owner>
@@ -20,6 +20,17 @@
     <itunes:category text="Technology"> </itunes:category>
     <sy:updatePeriod>hourly</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
+    <item>
+      <title>05: Polymer Summit</title>
+      <link>http://www.polymerpodcast.com/index.html</link>
+      <pubDate>Mon, 05 Oct 2015 19:00:00 +0000</pubDate>
+      <description>Now that the Polymer Summit is over but not forgotten, we review our favorite moments from the conference.</description>
+      <enclosure url="http://www.polymerpodcast.com/media/polymer-summit-final.mp3" length="72786674" type="audio/mpeg"/>
+      <guid isPermaLink="false">http://www.polymerpodcast.com/media/polymer-summit-final.mp3</guid>
+      <itunes:duration>56:01</itunes:duration>
+      <itunes:image href="http://www.polymerpodcast.com/media/album.jpg"/>
+      <itunes:summary>Now that the Polymer Summit is over but not forgotten, we review our favorite moments from the conference.</itunes:summary>
+    </item>
     <item>
       <title>04: Polymer 1.0 Review</title>
       <link>http://www.polymerpodcast.com/index.html</link>

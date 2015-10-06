@@ -2,6 +2,25 @@
   // make this return latest
   var episodes = [
     {
+      duration: '50 minutes 31 seconds',
+      name: 'Polymer Summit',
+      number: '05',
+      panel: [
+        {name: 'Filipe Araujo', image: 'https://pbs.twimg.com/profile_images/478931548872249345/TEedVwOK_bigger.jpeg', twitter: 'filipearaujo', twitterUrl: 'https://twitter.com/filipearaujo'},
+        {name: 'Jonathan Belcher', image: 'https://pbs.twimg.com/profile_images/631519863681343488/DBLcKZ_F_bigger.jpg', twitter: 'belcherj', twitterUrl: 'https://twitter.com/belcherj'},
+        {name: 'William Jeffries', image: 'https://pbs.twimg.com/profile_images/464444006017937408/aU8lcuBL_bigger.jpeg', twitter: 'williamcodes', twitterUrl: 'https://twitter.com/williamcodes'},
+        {name: 'Jenn Voss', image: 'https://pbs.twimg.com/profile_images/441022356983525376/Hs24Cvr7_bigger.jpeg', twitter: 'VossJenn', twitterUrl: 'https://twitter.com/VossJenn'}
+      ],
+      published: '10/05/2015',
+      sponsors: [
+        {name: 'SUNGARD', url: 'https://www.sungard.com/'}
+      ],
+      synopsis: 'Now that the Polymer Summit is over but not forgotten, we review our favorite moments from the conference.',
+      topics: [
+        {topic: 'Pending'}
+      ]
+    },
+    {
       duration: '56 minutes 1 second',
       name: 'Polymer 1.0 Review',
       number: '04',
@@ -17,10 +36,6 @@
       ],
       synopsis: 'After one month of some intense rewrites and migration, we sit down and discuss the road to Polymer 1.0',
       topics: [
-        {time: '', topic: ''},
-        {time: '', topic: '', links: [
-          {link: '', url: ''}
-        ]},
         {time: '1:20', topic: 'Using Polymer 1.0 in an existing codebase'},
         {time: '2:30', topic: 'Data Binding'},
         {time: '9:05', topic: 'White space and bindings'},
@@ -303,7 +318,7 @@
     })[0]
   });
 
-  Polymer({
+  window.Polymer({
     is: 'episode-api',
 
     properties: {
