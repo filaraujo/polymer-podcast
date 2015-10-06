@@ -36,3 +36,7 @@ gsutil rsync -R dist gs://www.polymerpodcast.com
 #gzip
 gsutil cp -z js,html -R dist/* gs://www.polymerpodcast.com
 ```
+
+
+##VALIDATE
+http://castfeedvalidator.com/
