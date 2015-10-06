@@ -17,7 +17,59 @@
       ],
       synopsis: 'After one month of some intense rewrites and migration, we sit down and discuss the road to Polymer 1.0',
       topics: [
-        {topic: 'Pending'}
+        {time: '', topic: ''},
+        {time: '', topic: '', links: [
+          {link: '', url: ''}
+        ]},
+        {time: '1:20', topic: 'Using Polymer 1.0 in an existing codebase'},
+        {time: '2:30', topic: 'Data Binding'},
+        {time: '9:05', topic: 'White space and bindings'},
+        {time: '9:35', topic: 'Templating and loss of '},
+        {time: '10:15', topic: 'String Interpolation'},
+        {time: '11:50', topic: 'Functions for equality'},
+        {time: '13:30', topic: 'Binding Systems'},
+        {time: '14:20', topic: 'Breakdown of Polymer, Micro, Mini', links: [
+          {link: 'Experimental features', url: 'https://www.polymer-project.org/1.0/docs/devguide/experimental.html'}
+        ]},
+        {time: '17:05', topic: 'Breaking the Library Apart'},
+        {time: '17:15', topic: 'Alternative Data Binding Systems'},
+        {time: '17:50', topic: 'Fil misses features of 0.5.*'},
+        {time: '18:50', topic: 'Data bindings don\'t work when creating elements in JS'},
+        {time: '21:15', topic: 'Polymer Slack Chat', links: [
+          {link: 'Slack Channel', url: 'http://polymer-slack.herokuapp.com/'}
+        ]},
+        {time: '21:33', topic: 'Creating Elements via Factory Implementation'},
+        {time: '24:00', topic: 'Third Party Data Binding Hooks'},
+        {time: '29:55', topic: 'CSS Universe'},
+        {time: '30:35', topic: 'PostCSS', links: [
+          {link: 'PostCSS', url: 'https://github.com/postcss/postcss'}
+        ]},
+        {time: '33:30', topic: 'CSS revisited'},
+        {time: '34:20', topic: 'Shady DOM'},
+        {time: '43:53', topic: 'Clean CSS'},
+        {time: '45:16', topic: 'Behaviors', links:[
+          {link: 'Polycasts - Behaviors', url: 'https://youtu.be/YrlmieL3Z0k'}
+        ]},
+        {time: '49:50', topic: 'Picks'},
+        {time: '30:35', topic: 'Dane\'s picks', links: [
+          {link: 'PostCSS', url: 'https://github.com/postcss/postcss'}
+        ]},
+        {time: '51:00', topic: 'Fil\'s picks', links: [
+          {link: 'Jafar Husain - Async Programming', url: 'https://youtu.be/lil4YCCXRYc'},
+          {link: 'Rate Us!', url: 'https://itunes.apple.com/us/podcast/polymer-podcast/id1011215404?mt=2'}
+        ]},
+        {time: '52:00', topic: 'William\'s picks', links: [
+          {link: 'WhatFont', url: 'https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm?hl=en'},
+          {link: 'ZenHub', url: 'https://www.zenhub.io/'}
+        ]},
+        {time: '53:40', topic: 'JB\'s picks', links: [
+          {link: 'The Martian', url: 'http://www.amazon.com/The-Martian-Novel-Andy-Weir-ebook/dp/B00EMXBDMA'},
+          {link: 'Jack\'s Adventures', url: 'http://jack.ventures/'},
+          {link: 'The Adventure Zone', url: 'http://www.maximumfun.org/shows/adventure-zone'},
+        ]},
+        {time: '55:55', topic: 'Support & Sponsors', links: [
+          {link: 'Sungard', url: 'http://sungard.com/'}
+        ]}
       ]
     },
     {
