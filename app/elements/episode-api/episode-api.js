@@ -28,7 +28,7 @@
         {name: 'Filipe Araujo', image: 'https://pbs.twimg.com/profile_images/478931548872249345/TEedVwOK_bigger.jpeg', twitter: 'filipearaujo', twitterUrl: 'https://twitter.com/filipearaujo'},
         {name: 'Jonathan Belcher', image: 'https://pbs.twimg.com/profile_images/631519863681343488/DBLcKZ_F_bigger.jpg', twitter: 'belcherj', twitterUrl: 'https://twitter.com/belcherj'},
         {name: 'William Jeffries', image: 'https://pbs.twimg.com/profile_images/464444006017937408/aU8lcuBL_bigger.jpeg', twitter: 'williamcodes', twitterUrl: 'https://twitter.com/williamcodes'},
-        {name: 'Dane O\'Conner', image: 'https://pbs.twimg.com/profile_images/378800000832830634/e0021647f2f55fcfabd70f506b1852e6_bigger.png', twitter: 'thedeeno', twitterUrl: 'https://twitter.com/thedeeno'}
+        {name: 'Dane O\'Connor', image: 'https://pbs.twimg.com/profile_images/642069750475026434/t7soOtnU.jpg', twitter: 'thedeeno', twitterUrl: 'https://twitter.com/thedeeno'}
       ],
       published: '07/28/2015',
       sponsors: [
@@ -95,7 +95,7 @@
         {name: 'Filipe Araujo', image: 'https://pbs.twimg.com/profile_images/478931548872249345/TEedVwOK_bigger.jpeg', twitter: 'filipearaujo', twitterUrl: 'https://twitter.com/filipearaujo'},
         {name: 'Jonathan Belcher', image: 'https://pbs.twimg.com/profile_images/631519863681343488/DBLcKZ_F_bigger.jpg', twitter: 'belcherj', twitterUrl: 'https://twitter.com/belcherj'},
         {name: 'William Jeffries', image: 'https://pbs.twimg.com/profile_images/464444006017937408/aU8lcuBL_bigger.jpeg', twitter: 'williamcodes', twitterUrl: 'https://twitter.com/williamcodes'},
-        {name: 'Dane O\'Conner', image: 'https://pbs.twimg.com/profile_images/378800000832830634/e0021647f2f55fcfabd70f506b1852e6_bigger.png', twitter: 'thedeeno', twitterUrl: 'https://twitter.com/thedeeno'},
+        {name: 'Dane O\'Connor', image: 'https://pbs.twimg.com/profile_images/642069750475026434/t7soOtnU.jpg', twitter: 'thedeeno', twitterUrl: 'https://twitter.com/thedeeno'},
         {name: 'Ian MacLeod', isGuest: true, image: 'https://pbs.twimg.com/profile_images/2751204129/58c6513c5f18df47247b81b2f94ae912_bigger.png', twitter: 'nevir', twitterUrl: 'https://twitter.com/nevir'}
       ],
       published: '06/22/2015',
@@ -170,7 +170,7 @@
         {name: 'Filipe Araujo', image: 'https://pbs.twimg.com/profile_images/478931548872249345/TEedVwOK_bigger.jpeg', twitter: 'filipearaujo', twitterUrl: 'https://twitter.com/filipearaujo'},
         {name: 'Jonathan Belcher', image: 'https://pbs.twimg.com/profile_images/631519863681343488/DBLcKZ_F_bigger.jpg', twitter: 'belcherj', twitterUrl: 'https://twitter.com/belcherj'},
         {name: 'William Jeffries', image: 'https://pbs.twimg.com/profile_images/464444006017937408/aU8lcuBL_bigger.jpeg', twitter: 'williamcodes', twitterUrl: 'https://twitter.com/williamcodes'},
-        {name: 'Dane O\'Conner', image: 'https://pbs.twimg.com/profile_images/378800000832830634/e0021647f2f55fcfabd70f506b1852e6_bigger.png', twitter: 'thedeeno', twitterUrl: 'https://twitter.com/thedeeno'},
+        {name: 'Dane O\'Connor', image: 'https://pbs.twimg.com/profile_images/642069750475026434/t7soOtnU.jpg', twitter: 'thedeeno', twitterUrl: 'https://twitter.com/thedeeno'},
         {name: 'Taylor Savage', isGuest: true, image: 'https://pbs.twimg.com/profile_images/547545280841670657/ZtHyM2rc_bigger.jpeg', twitter: 'taylorthesavage', twitterUrl: 'https://twitter.com/taylorthesavage'}
       ],
       published: '05/29/2015',
@@ -236,7 +236,7 @@
         {name: 'Filipe Araujo', image: 'https://pbs.twimg.com/profile_images/478931548872249345/TEedVwOK_bigger.jpeg', twitter: 'filipearaujo'},
         {name: 'Jonathan Belcher', image: 'https://pbs.twimg.com/profile_images/631519863681343488/DBLcKZ_F_bigger.jpg', twitter: 'belcherj'},
         {name: 'William Jeffries', image: 'https://pbs.twimg.com/profile_images/464444006017937408/aU8lcuBL_bigger.jpeg', twitter: 'williamcodes'},
-        {name: 'Dane O\'Conner', image: 'https://pbs.twimg.com/profile_images/378800000832830634/e0021647f2f55fcfabd70f506b1852e6_bigger.png', twitter: 'thedeeno'},
+        {name: 'Dane O\'Connor', image: 'https://pbs.twimg.com/profile_images/642069750475026434/t7soOtnU.jpg', twitter: 'thedeeno'},
         {name: 'Rob Dodson', isGuest: true, image: 'https://pbs.twimg.com/profile_images/378800000232696683/736a167223708fbbb2e910da863541cc_bigger.jpeg', twitter: 'rob_dodson'}
       ],
       published: '05/28/2015',
