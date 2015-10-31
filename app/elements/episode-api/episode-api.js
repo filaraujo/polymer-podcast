@@ -17,7 +17,58 @@
       ],
       synopsis: 'Now that the Polymer Summit is over but not forgotten, we review our favorite moments from the conference.',
       topics: [
-        {topic: 'Pending'}
+        {time: '0:38', topic: 'Polymer Summit Keynote', links: [
+          {link: 'Opening Keynote (The Polymer Summit 2015)', url: 'https://youtu.be/jVn8tlnwAEs'}
+        ]},
+        {time: '0:52', topic: 'Poly Lint', links: [
+          {link: 'Poly Lint', url: 'https://github.com/PolymerLabs/polylint'}
+        ]},
+        {time: '5:44', topic: 'Poly Git', links: [
+          {link: 'Polymer Magic Server', url: 'https://polygit.org/'}
+        ]},
+        {time: '10:35', topic: 'Poly Dev', links: [
+          {link: 'Polymer Dev', url: 'https://github.com/Polymer/polymer-dev'}
+        ]},
+        {time: '14:55', topic: 'Performance Talk', links: [
+          {link: 'Doing a Perf Audit of your Polymer App (The Polymer Summit 2015)', url: 'https://youtu.be/SkN5Q7nf7Vg'}
+        ]},
+        {time: '18:16', topic: 'Perf Bookmarklet', links: [
+          {link: 'Polymer Perf Bookmarklet', url: 'https://gist.github.com/ebidel/57c9e9379ec6b0bda16d'}
+        ]},
+        {time: '18:49', topic: 'Reflect to Attribute'},
+        {time: '20:19', topic: 'Private Methods'},
+        {time: '21:20', topic: 'Data and how it moves', links: [
+          {link: 'End to End with Polymer (The Polymer Summit 2015)', url: 'https://youtu.be/1f_Tj_JnStA'},
+          {link: 'Thinking in Polymer (The Polymer Summit 2015)', url: 'https://youtu.be/ZDjiUmx51y8'}
+        ]},
+        {time: '31:55', topic: 'ES6', links: [
+          {link: 'Using ES6 with Polymer (The Polymer Summit 2015)', url: 'https://youtu.be/bX3_tN23M_Y'}
+        ]},
+        {time: '34:19', topic: 'Testing Polymer', links: [
+          {link: 'Testing Polymer Web Components (The Polymer Summit 2015)', url: 'https://youtu.be/kX2INPJY4Y4'}
+        ]},
+        {time: '35:50', topic: 'Platinum Elements', links: [
+          {link: 'Platinum Elements (The Polymer Summit 2015)', url: 'https://youtu.be/EXn-Zr-qmqo'}
+        ]},
+        {time: '40:25', topic: 'Animation Talks', links: [
+          {link: 'Polymer\'s Animation System (The Polymer Summit 2015)', url: 'https://youtu.be/-tX0e29GQa4'}
+        ]},
+        {time: '44:20', topic: 'HTTP/2'},
+
+        {time: '46:49', topic: 'Fil\'s Pick', links: [
+          {link: 'The Golem and the Jinni', url: 'http://www.amazon.com/The-Golem-Jinni-Novel-P-S/dp/0062110845'}
+        ]},
+        {time: '47:10', topic: 'Jenn\'s Picks', links: [
+          {link: 'HTTP/2 Explained', url: 'http://daniel.haxx.se/http2/'},
+          {link: 'Until Dawn', url: 'https://www.playstation.com/en-us/games/until-dawn-ps4/'}
+        ]},
+        {time: '47:58', topic: 'William\s Picks', links: [
+          {link: 'Motherboard', url: 'http://motherboard.vice.com/en_us'}
+        ]},
+        {time: '48:25', topic: 'JB\'s Picks', links: [
+          {link: 'Crystal Knows', url: 'https://www.crystalknows.com/'},
+          {link: 'a16z Podcast: Is It Possible to Achieve Equitable Equity for Startup Employees?', url: 'http://a16z.com/2015/08/12/equity-models-and-experiments/'}
+        ]}
       ]
     },
     {
