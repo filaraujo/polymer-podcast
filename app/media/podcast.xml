@@ -8,9 +8,10 @@
     <language>en-us</language>
     <copyright>Polymer Podcast 2015</copyright>
     <atom:link href="http://www.polymerpodcast.com/media/podcast.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Mon, 05 Oct 2015 19:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2015 19:00:00 +0000</lastBuildDate>
     <itunes:author>Polymer Podcast</itunes:author>
-    <itunes:summary>A podcast about Polymer.js</itunes:summary>
+    <itunes:summary>This is a podcast about Polymer, the javascript library that
+      provides syntactic sugar on top of web components.</itunes:summary>
     <itunes:owner>
       <itunes:name>Polymer Podcast</itunes:name>
       <itunes:email>polymerpodcast@gmail.com</itunes:email>
@@ -20,6 +21,17 @@
     <itunes:category text="Technology"> </itunes:category>
     <sy:updatePeriod>hourly</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
+    <item>
+      <title>06: Component Show</title>
+      <link>http://www.polymerpodcast.com/index.html</link>
+      <pubDate>Thu, 12 Nov 2015 19:00:00 +0000</pubDate>
+      <description>Components, components, components! We join Charles Grugan and discuss our favorite components and their uses.</description>
+      <enclosure url="http://www.polymerpodcast.com/media/component-show-final.mp3" length="70843954" type="audio/mpeg"/>
+      <guid isPermaLink="false">http://www.polymerpodcast.com/media/component-show-final.mp3</guid>
+      <itunes:duration>49:08</itunes:duration>
+      <itunes:image href="http://www.polymerpodcast.com/media/album.jpg"/>
+      <itunes:summary>Components, components, components! We join Charles Grugan and discuss our favorite components and their uses.</itunes:summary>
+    </item>
     <item>
       <title>05: Polymer Summit</title>
       <link>http://www.polymerpodcast.com/index.html</link>

@@ -2,6 +2,26 @@
   // make this return latest
   var episodes = [
     {
+      duration: '49 minutes 08 seconds',
+      name: 'Component Show',
+      number: '06',
+      panel: [
+        {name: 'Filipe Araujo', image: 'https://pbs.twimg.com/profile_images/478931548872249345/TEedVwOK_bigger.jpeg', twitter: 'filipearaujo', twitterUrl: 'https://twitter.com/filipearaujo'},
+        {name: 'Jonathan Belcher', image: 'https://pbs.twimg.com/profile_images/631519863681343488/DBLcKZ_F_bigger.jpg', twitter: 'belcherj', twitterUrl: 'https://twitter.com/belcherj'},
+        {name: 'William Jeffries', image: 'https://pbs.twimg.com/profile_images/464444006017937408/aU8lcuBL_bigger.jpeg', twitter: 'williamcodes', twitterUrl: 'https://twitter.com/williamcodes'},
+        {name: 'Jenn Voss', image: 'https://pbs.twimg.com/profile_images/441022356983525376/Hs24Cvr7_bigger.jpeg', twitter: 'VossJenn', twitterUrl: 'https://twitter.com/VossJenn'},
+        {name: 'Charles Grugan', image: 'https://pbs.twimg.com/profile_images/652619521061203970/iD7jsbEs_bigger.jpg', twitter: 'che-effe', twitterUrl: 'https://twitter.com/che_effe'}
+      ],
+      published: '06/12/2015',
+      sponsors: [
+        {name: 'SUNGARD', url: 'https://www.sungard.com/'}
+      ],
+      synopsis: 'Components, components, components! We join Charles Grugan and discuss our favorite components and their uses.',
+      topics: [
+        {topic: 'Pending'}
+      ]
+    },
+    {
       duration: '50 minutes 31 seconds',
       name: 'Polymer Summit',
       number: '05',
