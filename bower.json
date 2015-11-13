@@ -2,8 +2,9 @@
   "name": "personal",
   "version": "0.0.0",
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.0.0",
+    "polymer": "~1.2.2",
     "iron-icon": "polymerelements/iron-icon#^1.0.0",
-    "iron-icons": "polymerelements/iron-icons#^1.0.0"
+    "iron-icons": "polymerelements/iron-icons#^1.0.0",
+    "page": "~1.6.4"
   }
 }

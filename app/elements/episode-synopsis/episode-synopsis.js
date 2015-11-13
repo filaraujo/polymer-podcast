@@ -13,8 +13,11 @@
       }
     },
 
+    episodeUrl: function(episode) {
+      return '/episode/' + episode.number;
+    },
+
     onMoreInfo: function() {
-      this.fire('episode-synopsis--more-info', {episode: this.episode});
       window.ga('send', 'event', 'episode', 'view', this.episode.number);
     }
   });

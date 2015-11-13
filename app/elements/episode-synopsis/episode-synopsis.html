@@ -11,24 +11,15 @@
         <p>{{episode.synopsis}}</p>
       </div>
 
-      <!-- <template is="dom-if" if="{{details}}">
-        <div class="episode-synopsis__actions">
-          <button>
-            play <iron-icon icon="av:play-circle-outline"></iron-icon>
-          </button>
-        </div>
-      </template> -->
-
-      <!-- <template is="dom-if" if="{{!details}}"> -->
-        <div class="episode-synopsis__actions">
-          <template is="dom-if" if="{{!details}}">
-            <span>{{episode.published}}</span>
-          </template>
-          <button on-click="onMoreInfo">
-            more info <iron-icon icon="icons:info-outline"></iron-icon>
-          </button>
-        </div>
-      <!-- </template> -->
+      <div class="episode-synopsis__actions">
+        <template is="dom-if" if="{{!details}}">
+          <span>{{episode.published}}</span>
+        </template>
+        <a href="{{ episodeUrl(episode) }}" on-click="onMoreInfo">
+          more info
+          <iron-icon icon="icons:info-outline"></iron-icon>
+        </a>
+      </div>
 
       <template is="dom-if" if="{{details}}">
         <dl class="episode-synopsis__meta">

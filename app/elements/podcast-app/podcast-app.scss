@@ -82,6 +82,8 @@ nav {
     color: #fff;
     cursor: pointer;
     display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
     line-height: $nav-height;
     height: $nav-height;
     text-decoration: none;
@@ -130,13 +132,13 @@ episode-subscribe {
     clip .3s .3s,
     opacity .3s,
     visibility 0s .3s;
+}
 
-  &[visible] {
-    opacity: 1;
-    transition:
-      opacity .3s,
-      visibility 0s 0s;
-    visibility: visible;
-
-  }
+:host([route="episode"]) episode-entity,
+:host([route="subscribe"]) episode-subscribe {
+  opacity: 1;
+  transition:
+    opacity .3s,
+    visibility 0s 0s;
+  visibility: visible;
 }

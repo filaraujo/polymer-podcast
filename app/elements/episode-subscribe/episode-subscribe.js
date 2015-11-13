@@ -2,17 +2,9 @@
   window.Polymer({
     is: 'episode-subscribe',
 
-    properties: {
-      visible: {
-        reflectToAttribute: true,
-        type: Boolean,
-        value: false
-      }
-    },
+    properties: {},
 
     onClose: function() {
-      this.visible = false;
-      this.fire('episode-subscribe--close');
       window.ga('send', 'event', 'subscribe', 'close');
     },
 

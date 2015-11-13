@@ -2,6 +2,7 @@
 <link rel="import" href="../../elements/episode-api/episode-api.html">
 <link rel="import" href="../../elements/episode-entity/episode-entity.html">
 <link rel="import" href="../../elements/episode-list/episode-list.html">
+<link rel="import" href="../../elements/episode-subscribe/episode-subscribe.html">
 <link rel="import" href="../../elements/episode-upcoming/episode-upcoming.html">
 <link rel="import" href="../podcast-icons/podcast-icons.html">
 <link rel="import" href="../../bower_components/iron-icon/iron-icon.html">
@@ -38,11 +39,11 @@
           <button>(coming soon)</button>
         </a> -->
         <!-- https://itunes.apple.com/us/podcast/polymer-podcast/id999210514?mt=2 -->
-        <button
-          on-click="showSubscribe">
+        <a
+          href="/subscribe">
           <iron-icon icon="av:playlist-add"></iron-icon>
           Subscribe
-        </button>
+        </a>
         <!-- <a
           href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewPodcast?id=999210514&at="
           target="_blank">
@@ -56,14 +57,12 @@
     </template>
 
     <episode-list
-      episodes="{{episodes}}"
-      on-episode-synopsis--more-info="setEpisode">
+      episodes="{{episodes}}">
     </episode-list>
 
     <episode-entity
       id="entity"
-      episode="{{episode}}"
-      on-episode-entity--close="unsetEpisode">
+      episode="{{episode}}">
     </episode-entity>
 
     <episode-subscribe
