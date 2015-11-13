@@ -12,7 +12,7 @@
         {name: 'Jenn Voss', image: 'https://pbs.twimg.com/profile_images/441022356983525376/Hs24Cvr7_bigger.jpeg', twitter: 'VossJenn', twitterUrl: 'https://twitter.com/VossJenn'},
         {name: 'Charles Grugan', image: 'https://pbs.twimg.com/profile_images/652619521061203970/iD7jsbEs_bigger.jpg', twitter: 'che-effe', twitterUrl: 'https://twitter.com/che_effe'}
       ],
-      published: '06/12/2015',
+      published: '11/12/2015',
       sponsors: [
         {name: 'SUNGARD', url: 'https://www.sungard.com/'}
       ],
