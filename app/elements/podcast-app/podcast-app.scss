@@ -26,18 +26,18 @@ header {
 
   h1 {
     color: #333;
-    font-size: 42px;
+    font-size: 55px;
     font-weight: 200;
     margin: 25px auto;
     max-width: $page-max-width;
     text-align: center;
 
     @media (max-width: 800px) {
-      font-size: 34px;
+      font-size: 42px;
     }
 
     @media (max-width: 600px) {
-      font-size: 38px;
+      font-size: 46px;
     }
 
     span {
@@ -46,18 +46,18 @@ header {
   }
 
   iron-icon {
-    height: 96px;
+    height: 120px;
     margin-right: 6px;
-    width: 96px;
+    width: 120px;
 
     @media (max-width: 800px) {
-        height: 88px;
-        width: 88px;
+        height: 100px;
+        width: 100px;
     }
 
     @media (max-width: 500px) {
-        height: 80px;
-        width: 80px;
+        height: 86px;
+        width: 86px;
     }
   }
 }

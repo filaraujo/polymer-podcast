@@ -7,7 +7,7 @@
 
 .episode-synopsis__info {
   overflow: auto;
-  padding: 14px 0 14px 100px;
+  padding: 26px 0 30px 120px;
   position: relative;
 
   h3 {
@@ -24,12 +24,13 @@
 
 .episode-synopsis__number {
   color: $pink;
-  font-size: 66px;
+  font-size: 80px;
   font-weight: 300;
   left: 10px;
   line-height: 66px;
   position: absolute;
   top: 0;
+  margin-top: 10px;
 }
 
 .episode-synopsis__actions {
