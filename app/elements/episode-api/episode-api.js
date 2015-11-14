@@ -18,7 +18,78 @@
       ],
       synopsis: 'Components, components, components! We join Charles Grugan and discuss our favorite components and their uses.',
       topics: [
-        {topic: 'Pending'}
+        {time: '0:38', topic: 'Charles Grugan Introduction'},
+        {time: '1:35', topic: 'JB\'s love for service workers and platinum-sw', links: [
+          {link: 'platinum-sw', url: 'https://elements.polymer-project.org/elements/platinum-sw'}
+        ]},
+        {time: '6:20', topic: 'platinum-https-redirect', links: [
+          {link: 'platinum-https-redirect', url: 'https://elements.polymer-project.org/elements/platinum-https-redirect'}
+        ]},
+        {time: '7:58', topic: 'platinum-bluetooth', links: [
+          {link: 'platinum-bluetooth', url: 'https://elements.polymer-project.org/elements/platinum-bluetooth'}
+        ]},
+        {time: '9:05', topic: 'Bluetooth in the browser and the internet of things'},
+        {time: '12:10', topic: 'iron-test-helpers', links: [
+          {link: 'iron-test-helpers', url: 'https://elements.polymer-project.org/elements/iron-test-helpers'}
+        ]},
+        {time: '12:55', topic: 'Drag and drop unit testing'},
+        {time: '14:10', topic: 'iron-selector', links: [
+          {link: 'iron-selector', url: 'https://elements.polymer-project.org/elements/iron-selector'}
+        ]},
+        {time: '17:06', topic: 'iron-list', links: [
+          {link: 'iron-list', url: 'https://elements.polymer-project.org/elements/iron-list'}
+        ]},
+        {time: '19:00', topic: 'iron-a11y-keys', links: [
+          {link: 'iron-a11y-keys', url: 'https://elements.polymer-project.org/elements/iron-a11y-keys'}
+        ]},
+        {time: '19:58', topic: 'iron-image', links: [
+          {link: 'iron-image', url: 'https://elements.polymer-project.org/elements/iron-image'}
+        ]},
+        {time: '23:08', topic: 'Accessibility with iron-image'},
+        {time: '24:43', topic: 'Client hints', links: [
+          {link: 'Automating resource selection with Client Hints', url: 'https://developers.google.com/web/updates/2015/09/automating-resource-selection-with-client-hints'}
+        ]},
+        {time: '26:29', topic: 'iron-flex-layout', links: [
+          {link: 'iron-flex-layout', url: 'https://elements.polymer-project.org/elements/iron-flex-layout'}
+        ]},
+        {time: '29:56', topic: 'google-signin', links: [
+          {link: 'google-signin', url: 'https://elements.polymer-project.org/elements/google-signin'}
+        ]},
+        {time: '30:50', topic: 'google-signin-aware', links: [
+          {link: 'google-signin-aware', url: 'https://elements.polymer-project.org/elements/google-signin?active=google-signin-aware'}
+        ]},
+        {time: '31:08', topic: 'Web components for twitter and facebook'},
+        {time: '33:14', topic: 'iron-ajax', links: [
+          {link: 'iron-ajax', url: 'https://elements.polymer-project.org/elements/iron-ajax'}
+        ]},
+        {time: '36:17', topic: 'Gold form elements and validation', links: [
+          {link: 'Gold elements', url: 'https://elements.polymer-project.org/browse?package=gold-elements'}
+        ]},
+        {time: '39:05', topic: 'google-hangout-button', links: [
+          {link: 'google-hangout-button', url: 'https://elements.polymer-project.org/elements/google-hangout-button'}
+        ]},
+        {time: '40:15', topic: 'google-youtube', links: [
+          {link: 'google-youtube', url: 'https://elements.polymer-project.org/elements/google-youtube'}
+        ]},
+        {time: '41:02', topic: 'google-youtube gotchas'},
+        {time: '41:40', topic: 'William\'s Pick', links: [
+          {link: 'The debug method in chrome dev tools', url: 'https://developers.google.com/web/tools/chrome-devtools/debug/'}
+        ]},
+        {time: '43:34', topic: 'JB\'s Pick', links: [
+          {link: 'CSS motion paths', url: 'https://googlechrome.github.io/samples/css-motion-path/index.html'},
+        ]},
+        {time: '45:38', topic: 'Charles\'s Pick', links: [
+          {link: 'Github Education', url: 'https://education.github.com/'}
+        ]},
+        {time: '46:52', topic: 'Jenn\'s Pick', links: [
+          {link: 'Light Blue Bean', url: 'http://legacy.punchthrough.com/bean/'}
+        ]},
+        {time: '48:02', topic: 'JB has another pick', links: [
+          {link: 'Tech Prep by Facebook', url: 'https://techprep.fb.com/'}
+        ]},
+        {time: '48:30', topic: 'Fil\'s Pick', links: [
+          {link: 'Polycasts with Rob Dodson', url: 'https://www.youtube.com/playlist?list=PLOU2XLYxmsII5c3Mgw6fNYCzaWrsM3sMN'}
+        ]}
       ]
     },
     {
@@ -82,7 +153,7 @@
           {link: 'HTTP/2 Explained', url: 'http://daniel.haxx.se/http2/'},
           {link: 'Until Dawn', url: 'https://www.playstation.com/en-us/games/until-dawn-ps4/'}
         ]},
-        {time: '47:58', topic: 'William\s Picks', links: [
+        {time: '47:58', topic: 'William\'s Pick', links: [
           {link: 'Motherboard', url: 'http://motherboard.vice.com/en_us'}
         ]},
         {time: '48:25', topic: 'JB\'s Picks', links: [
