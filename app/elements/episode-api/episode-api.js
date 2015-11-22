@@ -2,6 +2,26 @@
   // make this return latest
   var episodes = [
     {
+      duration: '47 minutes and 07 seconds',
+      name: 'Chrome Dev Summit',
+      number: '07',
+      panel: [
+        {name: 'Filipe Araujo', image: 'https://pbs.twimg.com/profile_images/478931548872249345/TEedVwOK_bigger.jpeg', twitter: 'filipearaujo', twitterUrl: 'https://twitter.com/filipearaujo'},
+        {name: 'Jonathan Belcher', image: 'https://pbs.twimg.com/profile_images/631519863681343488/DBLcKZ_F_bigger.jpg', twitter: 'belcherj', twitterUrl: 'https://twitter.com/belcherj'},
+        {name: 'Jenn Voss', image: 'https://pbs.twimg.com/profile_images/441022356983525376/Hs24Cvr7_bigger.jpeg', twitter: 'VossJenn', twitterUrl: 'https://twitter.com/VossJenn'},
+        {name: 'Jeffrey Posnick', isGuest: true, image: 'https://pbs.twimg.com/profile_images/605959060936998913/9ZWW-DEK_bigger.jpg', twitter: 'jeffposnick', twitterUrl: 'https://twitter.com/jeffposnick'},
+        {name: 'Taylor Savage', isGuest: true, image: 'https://pbs.twimg.com/profile_images/547545280841670657/ZtHyM2rc_bigger.jpeg', twitter: 'taylorthesavage', twitterUrl: 'https://twitter.com/taylorthesavage'}
+      ],
+      published: '11/18/2015',
+      sponsors: [
+        {name: 'SUNGARD', url: 'https://www.sungard.com/'}
+      ],
+      synopsis: 'Live from the Chrome Dev Summit, our special guests Taylor Savage and Jeff Posnick talk to us about service workers and the Polymer State of the Union.',
+      topics: [
+        {topic: 'pending'},
+      ]
+    },
+    {
       duration: '49 minutes 08 seconds',
       name: 'Component Show',
       number: '06',
