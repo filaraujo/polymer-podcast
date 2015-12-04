@@ -13,6 +13,7 @@ var path = require('path');
 var sass = require('gulp-sass');
 var debug = require('gulp-debug');
 var polybuild = require('polybuild');
+var exec = require('child_process').exec;
 
 var AUTOPREFIXER_BROWSERS = [
   'ie >= 10',
@@ -146,6 +147,11 @@ gulp.task('vulcanize', function() {
   return gulp.src('dist/elements/podcast-app/podcast-app.html')
     .pipe(debug())
     .pipe(polybuild({maximumCrush: true}))
+    .pipe($.if('*.html', $.minifyHtml({
+      quotes: true,
+      empty: true,
+      spare: true
+    })))
     .pipe(gulp.dest(DEST_DIR))
     .pipe($.size({title: 'vulcanize'}));
 });
@@ -208,6 +214,15 @@ gulp.task('pagespeed', function(cb) {
     // Use a Google Developer API key if you have one: http://goo.gl/RkN0vE
     // key: 'YOUR_API_KEY'
   }, cb);
+});
+
+gulp.task('deploy', function(cb) {
+  exec('gsutil cp -z js,html -R dist/* gs://www.polymerpodcast.com',
+  function(err, stdout, stderr) {
+    console.log(stdout);
+    console.log(stderr);
+    cb(err);
+  });
 });
 
 // Load tasks for web-component-tester
