@@ -11,6 +11,8 @@ var reload = browserSync.reload;
 var merge = require('merge-stream');
 var path = require('path');
 var sass = require('gulp-sass');
+var debug = require('gulp-debug');
+var polybuild = require('polybuild');
 
 var AUTOPREFIXER_BROWSERS = [
   'ie >= 10',
@@ -101,11 +103,7 @@ gulp.task('copy', function() {
   var elements = gulp.src(['app/elements/**/*.*'])
     .pipe(gulp.dest('dist/elements'));
 
-  var vulcanized = gulp.src(['app/elements/elements.html'])
-    .pipe($.rename('elements.vulcanized.html'))
-    .pipe(gulp.dest('dist/elements'));
-
-  return merge(app, bower, elements, vulcanized).pipe($.size({title: 'copy'}));
+  return merge(app, bower, elements).pipe($.size({title: 'copy'}));
 });
 
 // Copy Web Fonts To Dist
@@ -121,7 +119,7 @@ gulp.task('html', function() {
 
   return gulp.src(['app/**/*.html', '!app/{elements,test}/**/*.html'])
     // Replace path for vulcanized assets
-    .pipe($.if('*.html', $.replace('elements/elements.html', 'elements/elements.vulcanized.html')))
+    .pipe($.if('*.html', $.replace('elements/podcast-app/podcast-app.html', 'elements/podcast-app.build.html')))
     .pipe(assets)
     // Concatenate And Minify JavaScript
     .pipe($.if('*.js', $.uglify({preserveComments: 'some'})))
@@ -145,15 +143,9 @@ gulp.task('html', function() {
 gulp.task('vulcanize', function() {
   var DEST_DIR = 'dist/elements';
 
-  return gulp.src('dist/elements/elements.vulcanized.html')
-    .pipe($.vulcanize({
-      dest: DEST_DIR,
-      strip: true,
-      inline: true,
-      inlineScripts: true,
-      inlineCss: true
-
-    }))
+  return gulp.src('dist/elements/podcast-app/podcast-app.html')
+    .pipe(debug())
+    .pipe(polybuild({maximumCrush: true}))
     .pipe(gulp.dest(DEST_DIR))
     .pipe($.size({title: 'vulcanize'}));
 });
